@@ -13,4 +13,4 @@
 |6|Features|Allow Unnamed policies<br/>Multiple interfaces|<img src="https://i.imgur.com/MZOcvvP.png"><br/><img src="https://i.imgur.com/bbSv4Zr.png">|
 |7|how are policy matches determined?||<img src="https://i.imgur.com/CE9UFOR.png">|
 |8|Security Profiles||<img src="https://i.imgur.com/F8GRhwq.png">|
-|9|Policy ID||<img src="https://i.imgur.com/m4m39vS.png"><br/>Adjusting Policy order<br/><img src="https://i.imgur.com/ImLuBky.png">|
+|9|Policy||Policy ID<br/><img src="https://i.imgur.com/m4m39vS.png"><br/>Adjusting Policy order<br/><img src="https://i.imgur.com/ImLuBky.png">|
