@@ -12,3 +12,4 @@
 |5|FDN|FortiGuard Distribution Network|
 |6|OCSP|
 |7|NAT|Network Address Translate|
+|8|UTM|Unified Threat Management|
