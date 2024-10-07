@@ -16,5 +16,5 @@
 |9|ISDB|Internet SErvice Database|
 |10|SNAT|Static Network Address Translate|
 |11|VIP|
-|12|PAT|Port address translation|
+|12|PAT|Port Address Translation|
 |13|DNAT|Dynamic Network Address Translate|
