@@ -10,3 +10,4 @@
 |3|Trusted hosts||<img src="https://i.imgur.com/1xMUQv4.png"><br/><img src="https://i.imgur.com/wYD9v1a.png">|
 |4|cfg file format - yaml or default format||<img src="https://i.imgur.com/yNJgUsk.png">|
 |5|FrotiGuard Subscription Services||<img src="https://i.imgur.com/iH8Rm0Q.png"><br/><img src="https://i.imgur.com/YSyvGye.png"><br/><img src="https://i.imgur.com/uLKhFl5.png">|
+|6|Feature Visibility|Allow Unnamed policies|<img src="https://i.imgur.com/MZOcvvP.png">|
