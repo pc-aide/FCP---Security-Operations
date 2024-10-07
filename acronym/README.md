@@ -14,3 +14,5 @@
 |7|NAT|Network Address Translate|
 |8|UTM|Unified Threat Management|
 |9|ISDB|Internet SErvice Database|
+|10|SNAT|
+|11|VIP|
