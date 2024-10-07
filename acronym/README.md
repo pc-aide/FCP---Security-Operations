@@ -16,3 +16,4 @@
 |9|ISDB|Internet SErvice Database|
 |10|SNAT|
 |11|VIP|
+|12|PAT|Port address translation|
