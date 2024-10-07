@@ -17,3 +17,4 @@
 |10|SNAT|
 |11|VIP|
 |12|PAT|Port address translation|
+|13|DNAT|
