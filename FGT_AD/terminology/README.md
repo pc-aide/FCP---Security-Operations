@@ -16,3 +16,4 @@
 |9|Policy||Policy ID<br/><img src="https://i.imgur.com/m4m39vS.png"><br/>Adjusting Policy order<br/><img src="https://i.imgur.com/ImLuBky.png"><br/>Best Practices<br/><img src="https://i.imgur.com/15OqcYe.png"><br/>Inpection Mode Flow-based or Proxy-based<br/><img src="https://i.imgur.com/hNGZNwX.png"><br/>default disabled - so we enable it<br/><img src="https://i.imgur.com/wCE4eef.png">|
 |10|Logging||<img src="https://i.imgur.com/C5tgM2n.png"><br/>Monitor Traffic Logs<br/><img src="https://i.imgur.com/htOgVwa.png">|
 |11|ISDB||<img src="https://i.imgur.com/4o8qnjR.png"><br/><img src="https://i.imgur.com/Lq1bfPL.png">|
+|12|NAT||SNAT vs DNAT<br/><img src="https://i.imgur.com/g9lXcIh.png">|
