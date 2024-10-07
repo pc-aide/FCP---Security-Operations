@@ -14,7 +14,7 @@
 |7|NAT|Network Address Translate|
 |8|UTM|Unified Threat Management|
 |9|ISDB|Internet SErvice Database|
-|10|SNAT|
+|10|SNAT|Static Network Address Translate|
 |11|VIP|
 |12|PAT|Port address translation|
-|13|DNAT|
+|13|DNAT|Dynamic Network Address Translate|
