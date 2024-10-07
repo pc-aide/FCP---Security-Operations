@@ -10,3 +10,4 @@
 |3|VDOM|Virtual Domain|
 |4|LLDP|Link Layer Discovery Protocol|
 |5|FDN|FortiGuard Distribution Network|
+|6|OCSP|
