@@ -21,3 +21,4 @@
 |14|CGN|Carrier-Grade NAT|
 |15|ARP|Address Resolution Protocol|
 |16|RIB|Routing Information Base|
+|17|FIB|Forwarding Information Base|
