@@ -20,3 +20,4 @@
 |13|DNAT|Dynamic Network Address Translate|
 |14|CGN|Carrier-Grade NAT|
 |15|ARP|Address Resolution Protocol|
+|16|RIB|Routing Information Base|
