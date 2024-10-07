@@ -18,3 +18,4 @@
 |11|VIP|
 |12|PAT|Port Address Translation|
 |13|DNAT|Dynamic Network Address Translate|
+|14|CGN|Carrier-Grade NAT|
