@@ -12,3 +12,4 @@
 |5|FrotiGuard Subscription Services||<img src="https://i.imgur.com/iH8Rm0Q.png"><br/><img src="https://i.imgur.com/YSyvGye.png"><br/><img src="https://i.imgur.com/uLKhFl5.png">|
 |6|Features|Allow Unnamed policies<br/>Multiple interfaces|<img src="https://i.imgur.com/MZOcvvP.png"><br/><img src="https://i.imgur.com/bbSv4Zr.png">|
 |7|how are policy matches determined?||<img src="https://i.imgur.com/CE9UFOR.png">|
+|8|Security Profiles||<img src="https://i.imgur.com/F8GRhwq.png">|
