@@ -3,7 +3,7 @@
 ---
 
 ## bad thing
-<img src="https://i.imgur.com/cZMRFrc.png"
+<img src="https://i.imgur.com/cZMRFrc.png">
 
 ---
 
