@@ -20,3 +20,4 @@
 |n|name|eg|O/P|
 |-|----|--|---|
 |1|RIB|`get router info kernel`|<img src="https://i.imgur.com/a6eLnVV.png">|
+|2|routin table|`get router info routing-table all`|<img src="https://i.imgur.com/16ilDvN.png">|
