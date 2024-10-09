@@ -20,4 +20,4 @@
 |13|ARP||<img src="https://i.imgur.com/wbwjs3t.png">|
 |14|Routing||<img src="https://i.imgur.com/2wcb3D9.png"><br/>Route Lookup<br/><img src="https://i.imgur.com/EdVnqyq.png"><br/>Default route<br/><img src="https://i.imgur.com/RTbN1Xh.png"><br/>Default distance per route type<br/><img src="https://i.imgur.com/sJIvzHA.png"><br/><img src="https://i.imgur.com/EWibN1q.png"><br/>Priority<br/><img src="https://i.imgur.com/07m15IK.png">|
 |15|Reverse Path Forwarding||<img src="https://i.imgur.com/MWBj6tw.png">|
-|16|Configuring ECMP||<img src="https://i.imgur.com/AS6eWlt.png"><br/>ECMP eg<br/><img src="https://i.imgur.com/oUrlgch.png">|
+|16|Configuring ECMP||<img src="https://i.imgur.com/AS6eWlt.png"><br/>ECMP eg<br/><img src="https://i.imgur.com/oUrlgch.png"><br/>Default ECMP algorithm vs SD-WAN ECMP algorithm<br/><img src="https://i.imgur.com/reSmuir.png">|
