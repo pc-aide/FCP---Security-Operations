@@ -31,3 +31,4 @@
 |24|SCEP|Simple Certificate Enrollment Protocol|
 |25|CRL|Certificate Revocation List|
 |26|HSTS|HTTP Strict Transport Security|
+|27|CDR|Content Disarm & REconstructuion|
