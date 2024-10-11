@@ -28,4 +28,5 @@
 |21|FSSO|Fortinet Single Sing-On|
 |22|SAN|Subject Alternative Name|
 |23|SNI|Server Name Indication|
-|24|SCEP|Simple Certificate Enrollment Protocol
+|24|SCEP|Simple Certificate Enrollment Protocol|
+|25|CRL|Certificate Revocation List|
