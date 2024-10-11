@@ -27,3 +27,4 @@
 |20|SD-WAN|Software-Defined Wide Area Network|
 |21|FSSO|Fortinet Single Sing-On|
 |22|SAN|Subject Alternative Name|
+|23|SNI|Server Name Indication|
