@@ -34,3 +34,4 @@
 |27|CDR|Content Disarm & REconstructuion|
 |28|IPS|Intrusion Prevention System|
 |29|DTLS|Datagram Transport Layer Security|
+|30|SA|Security Association|
