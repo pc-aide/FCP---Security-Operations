@@ -24,3 +24,4 @@
 |1|RIB|`get router info kernel`|<img src="https://i.imgur.com/a6eLnVV.png">|
 |2|routin table|`get router info routing-table all`|<img src="https://i.imgur.com/16ilDvN.png">|
 |3|performance|`get system performance status`|<img src="https://i.imgur.com/mP2KGfp.png">|
+|4|hardware|`get hardware status`|VM<br/><img src="https://i.imgur.com/bLZ9jv5.png"><br/>physical<br/><img src="https://i.imgur.com/uQAg0CV.png">|
