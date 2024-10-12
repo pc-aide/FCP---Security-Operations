@@ -33,3 +33,4 @@
 |26|HSTS|HTTP Strict Transport Security|
 |27|CDR|Content Disarm & REconstructuion|
 |28|IPS|Intrusion Prevention System|
+|29|DTLS|Datagram Transport Layer Security|
