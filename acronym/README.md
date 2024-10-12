@@ -35,3 +35,4 @@
 |28|IPS|Intrusion Prevention System|
 |29|DTLS|Datagram Transport Layer Security|
 |30|SA|Security Association|
+|31|DH|Diffie-Hellman|
