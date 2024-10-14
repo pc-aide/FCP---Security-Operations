@@ -37,3 +37,4 @@
 |30|SA|Security Association|
 |31|DH|Diffie-Hellman|
 |32|DPD|Dead Peer Detection|
+|33|ISFWs|Internal Segmentation Firwalls|
