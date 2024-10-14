@@ -10,6 +10,7 @@
 |3|debug - vpn ssl|`diagnose debug enable`<br/>`diagnose vpn ssl`|
 |4|vpn tunnel|`diagnose vpn tunnel ?`|IPsec SA mgmt<br/><img src="https://i.imgur.com/m0LrgRy.png">|
 |5|ike gw list|`diagnose vpn ike gateway list name <yourNameVPN>`|
+|6|session list|`diagnose sys session list`|<img src="https://i.imgur.com/laGJQzX.png">|
 
 ---
 
