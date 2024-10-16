@@ -29,3 +29,4 @@
 |3|performance|`get system performance status`|<img src="https://i.imgur.com/mP2KGfp.png">|
 |4|hardware|`get hardware status`|VM<br/><img src="https://i.imgur.com/bLZ9jv5.png"><br/>physical<br/><img src="https://i.imgur.com/uQAg0CV.png">|
 |5|tunnel detail|`get vpn ipec tunnel details`|<img src="https://i.imgur.com/qeuKJk9.png">|
+|6|ha|`get system ha status`|
