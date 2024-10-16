@@ -39,3 +39,4 @@
 |32|DPD|Dead Peer Detection|
 |33|ISFWs|Internal Segmentation Firwalls|
 |34|LAG|Link Aggregation Group|
+|35|HB|Heartbeat|
