@@ -13,7 +13,7 @@
 |6|session list|`diagnose sys session list`|<img src="https://i.imgur.com/laGJQzX.png">|
 |7|check cfg sync|`diagnose sys ha cheksum show`<br/><br/>`diagnose sys ha checksum cluster`<br/><br/>`diagnose sys ha checksum recalculate`|
 |8|top process|`diagnose sys top`|<img src="https://i.imgur.com/aQc7a0E.png"><br/><img src="https://i.imgur.com/xqSdhtq.png">|
-|9|conserver mode|`diagnose hardware sysinfo conserve`|<img src="https://i.imgur.com/83j07XY.png">|
+|9|conserver mode|`diagnose hardware sysinfo conserve`|<img src="https://i.imgur.com/83j07XY.png"><br/><img src="https://i.imgur.com/bbrgLq8.png">|
 
 ---
 
