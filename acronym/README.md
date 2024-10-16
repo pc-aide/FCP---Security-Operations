@@ -40,3 +40,4 @@
 |33|ISFWs|Internal Segmentation Firwalls|
 |34|LAG|Link Aggregation Group|
 |35|HB|Heartbeat|
+|36|SNAT|Source Network Address Translation|
