@@ -12,6 +12,7 @@
 |5|ike gw list|`diagnose vpn ike gateway list name <yourNameVPN>`|<img src="https://i.imgur.com/L9hSQwj.png">|
 |6|session list|`diagnose sys session list`|<img src="https://i.imgur.com/laGJQzX.png">|
 |7|check cfg sync|`diagnose sys ha cheksum show`<br/><br/>`diagnose sys ha checksum cluster`<br/><br/>`diagnose sys ha checksum recalculate`|
+|8|top process|`diagnose sys top`|
 
 ---
 
