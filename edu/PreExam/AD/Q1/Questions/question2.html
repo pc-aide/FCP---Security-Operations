@@ -1,0 +1,52 @@
+<div>
+  <h2>Question 2</h2>
+  <p>Which three pieces of information does FortiGate use to identify the hostname of the SSL server when SSL certificate inspection is enabled? (Choose three.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="sslInspectionOption" value="A" id="optionA_2"> 
+      <label for="optionA_2">A. The host field in the HTTP header.</label><br>
+      
+      <input type="checkbox" name="sslInspectionOption" value="B" id="optionB_2"> 
+      <label for="optionB_2">B. The server name indication (SNI) extension in the client hello message.</label><br>
+      
+      <input type="checkbox" name="sslInspectionOption" value="C" id="optionC_2"> 
+      <label for="optionC_2">C. The subject alternative name (SAN) field in the server certificate.</label><br>
+      
+      <input type="checkbox" name="sslInspectionOption" value="D" id="optionD_2"> 
+      <label for="optionD_2">D. The subject field in the server certificate.</label><br>
+      
+      <input type="checkbox" name="sslInspectionOption" value="E" id="optionE_2"> 
+      <label for="optionE_2">E. The serial number in the server certificate.</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question2">Solution</button>
+
+  <div id="solutionInfo_question2" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>When using SSL certificate inspection, FortiGate is not decrypting the traffic. During the exchange of hello messages at the beginning of an SSL handshake, FortiGate parses the server name indication (SNI) from the client Hello, which is an extension of the TLS protocol. The SNI tells FortiGate the hostname of the SSL server, which is validated against the DNS name before the server certificate is received. If there is no SNI exchanged, then FortiGate identifies the server using the Subject or SAN (Subject Alternative Name) fields in the server certificate.</p>
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortiportal/7.4.1/administration-guide/822035/overview" target="_blank">FortiPortal Administration Guide</a></li>
+    </ul>
+
+    <p id="correctAnswers_question2" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      B. The server name indication (SNI) extension in the client hello message.<br>
+      C. The subject alternative name (SAN) field in the server certificate.<br>
+      D. The subject field in the server certificate.
+    </p>
+
+    <p id="yourAnswer_question2" style="display: none;">
+      <strong>Your Answers:</strong><br>
+      <span id="yourAnswerOptionA_2"></span><br>
+      <span id="yourAnswerOptionB_2"></span><br>
+      <span id="yourAnswerOptionC_2"></span><br>
+      <span id="yourAnswerOptionD_2"></span><br>
+      <span id="yourAnswerOptionE_2"></span>
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer2.js"></script>

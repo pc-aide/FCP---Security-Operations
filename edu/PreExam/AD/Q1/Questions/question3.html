@@ -1,0 +1,51 @@
+<div>
+  <h2>Question 3</h2>
+  
+  <p>Refer to the exhibit:</p>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q1/img/q3.png" alt="SD-WAN Exhibit" style="max-width: 100%; height: auto;">
+  
+  <p>Which algorithm does SD-WAN use to distribute traffic that does not match any of the SD-WAN rules?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="sdwanAlgorithm" value="A" id="optionA_3"> 
+      <label for="optionA_3">A. All traffic from a source IP to a destination IP is sent to the same interface.</label><br>
+      
+      <input type="radio" name="sdwanAlgorithm" value="B" id="optionB_3"> 
+      <label for="optionB_3">B. Traffic is sent to the link with the lowest latency.</label><br>
+      
+      <input type="radio" name="sdwanAlgorithm" value="C" id="optionC_3"> 
+      <label for="optionC_3">C. Traffic is distributed based on the number of sessions through each interface.</label><br>
+      
+      <input type="radio" name="sdwanAlgorithm" value="D" id="optionD_3"> 
+      <label for="optionD_3">D. All traffic from a source IP is sent to the same interface.</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question3">Solution</button>
+
+  <div id="solutionInfo_question3" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>If traffic does not match any of the SD-WAN rules, it will match the implicit rule. The algorithm used in this case is based on source and destination IP addresses, which ensures that all traffic from a specific source IP to a specific destination IP is sent through the same interface.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.4.4/administration-guide/216765/implicit-rule" target="_blank">Fortinet Administration Guide - Implicit Rule</a></li>
+    </ul>
+
+    <p id="correctAnswers_question3" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. All traffic from a source IP to a destination IP is sent to the same interface.
+    </p>
+
+    <p id="yourAnswer_question3" style="display: none;">
+      <strong>Your Answer:</strong><br>
+      <span id="yourAnswerOptionA_3"></span><br>
+      <span id="yourAnswerOptionB_3"></span><br>
+      <span id="yourAnswerOptionC_3"></span><br>
+      <span id="yourAnswerOptionD_3"></span>
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer3.js"></script>
