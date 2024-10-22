@@ -1,0 +1,40 @@
+<div>
+  <h2>Question 9</h2>
+  <p>Refer to the exhibit. The exhibit shows the FortiGuard Category Based Filter section of a corporate web filter profile. An administrator must block access to download.com, which belongs to the Freeware and Software Downloads category. The administrator must also allow other websites in the same category. What are two solutions for satisfying the requirement? (Choose two.)</p>
+  
+  <form>
+    <div>
+      <input type="checkbox" name="filterSolution" value="A" id="optionA_9"> 
+      <label for="optionA_9">A. Configure a separate firewall policy with action Deny and an FQDN address object for *.download.com as destination address.</label><br>
+      
+      <input type="checkbox" name="filterSolution" value="B" id="optionB_9"> 
+      <label for="optionB_9">B. Set the Freeware and Software Downloads category Action to Warning.</label><br>
+      
+      <input type="checkbox" name="filterSolution" value="C" id="optionC_9"> 
+      <label for="optionC_9">C. Configure a web override rating for download.com and select Malicious Websites as the subcategory.</label><br>
+      
+      <input type="checkbox" name="filterSolution" value="D" id="optionD_9"> 
+      <label for="optionD_9">D. Configure a static URL filter entry for download.com with Type and Action set to Wildcard and Block, respectively.</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question9">Solution</button>
+
+  <div id="solutionInfo_question9" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>Since the site download.com is in a category that we allow, you just need to specify this site (URL) as an exception in the malicious website category to block it, while allowing other sites in that category. Hence the override rating is the correct approach.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/725397/web-content-filter" target="_blank">Web Content Filter - Fortinet Documentation</a></li>
+    </ul>
+    
+    <p id="correctAnswers_question9" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      C. Configure a web override rating for download.com and select Malicious Websites as the subcategory.<br>
+      D. Configure a static URL filter entry for download.com with Type and Action set to Wildcard and Block, respectively.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer9.js"></script>

@@ -1,0 +1,48 @@
+<div>
+  <h2>Question 11</h2>
+  <p>Refer to the exhibits.</p>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q1/img/q11.png" alt="Exhibit 1" style="max-width: 100%;">
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q1/img/q11_2.png" alt="Exhibit 2" style="max-width: 100%;">
+  <p>Based on the configuration, what will happen to Apple FaceTime if there are only a few calls originating or incoming?</p>
+  
+  <form>
+    <div>
+      <input type="radio" name="troubleshootingStep" value="A" id="optionA_11"> 
+      <label for="optionA_11">A. Apple FaceTime will be allowed, based on the Video/Audio category configuration.</label><br>
+      
+      <input type="radio" name="troubleshootingStep" value="B" id="optionB_11"> 
+      <label for="optionB_11">B. Apple FaceTime will be allowed, based on the Apple filter configuration.</label><br>
+      
+      <input type="radio" name="troubleshootingStep" value="C" id="optionC_11"> 
+      <label for="optionC_11">C. Apple FaceTime will be allowed only if the Apple filter in Application and Filter Overrides is set to Allow.</label><br>
+      
+      <input type="radio" name="troubleshootingStep" value="D" id="optionD_11"> 
+      <label for="optionD_11">D. Apple FaceTime will be blocked, based on the Excessive-Bandwidth filter configuration.</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question11">Solution</button>
+
+  <div id="solutionInfo_question11" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>Scanning Order:</p>
+    <p>After the IPS engine examines the traffic stream for a signature match, FortiGate scans packets for matches, in this order, for the application control profile:</p>
+    <ol>
+      <li>Application and filter overrides: If you have configured any application overrides or filter overrides, the application control profile considers those first. It looks for a matching override starting at the top of the list, like firewall policies.</li>
+      <li>Categories: Finally, the application control profile applies the action that you’ve configured for applications in your selected categories.</li>
+    </ol>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/19814/basic-category-filters-and-overrides" target="_blank">Basic Category Filters and Overrides - Fortinet Documentation</a></li>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-Configure-Application-override/ta-p/198002" target="_blank">Technical Tip: Configure Application Override - Fortinet Community</a></li>
+    </ul>
+    
+    <p id="correctAnswers_question11" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      D. Apple FaceTime will be blocked, based on the Excessive-Bandwidth filter configuration.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer11.js"></script>

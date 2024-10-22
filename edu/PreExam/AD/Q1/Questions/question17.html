@@ -1,0 +1,40 @@
+<div>
+  <h2>Question 17</h2>
+  <p>Which two settings are required for SSL VPN to function between two FortiGate devices? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="sslVpnSettings" value="A" id="optionA_17"> 
+      <label for="optionA_17">A. The client FortiGate requires the SSL VPN tunnel interface type to connect SSL VPN.</label><br>
+      
+      <input type="checkbox" name="sslVpnSettings" value="B" id="optionB_17"> 
+      <label for="optionB_17">B. The server FortiGate requires a CA certificate to verify the client FortiGate certificate.</label><br>
+      
+      <input type="checkbox" name="sslVpnSettings" value="C" id="optionC_17"> 
+      <label for="optionC_17">C. The client FortiGate requires a client certificate signed by the CA on the server FortiGate.</label><br>
+      
+      <input type="checkbox" name="sslVpnSettings" value="D" id="optionD_17"> 
+      <label for="optionD_17">D. The client FortiGate requires a manually added route to remote subnets.</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question17">Solution</button>
+
+  <div id="solutionInfo_question17" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>For SSL VPN to function between two FortiGate devices, the client FortiGate needs to be configured with an SSL VPN tunnel interface. This interface allows the client to securely route traffic through the SSL VPN tunnel. The server FortiGate needs a Certificate Authority (CA) certificate to validate the client FortiGate’s certificate, ensuring the client's identity is trusted.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.0.0/new-features/508779/fortigate-as-ssl-vpn-client" target="_blank">Fortinet Documentation - FortiGate as SSL VPN Client</a></li>
+    </ul>
+    
+    <p id="correctAnswers_question17" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. The client FortiGate requires the SSL VPN tunnel interface type to connect SSL VPN.<br>
+      B. The server FortiGate requires a CA certificate to verify the client FortiGate certificate.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer17.js"></script>

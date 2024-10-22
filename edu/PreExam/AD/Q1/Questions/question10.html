@@ -1,0 +1,43 @@
+<div>
+  <h2>Question 10</h2>
+  <p>A network administrator wants to set up redundant IPsec VPN tunnels on FortiGate by using two IPsec VPN tunnels and static routes. All traffic must be routed through the primary tunnel when both tunnels are up. The secondary tunnel must be used only if the primary tunnel goes down. In addition, FortiGate should be able to detect a dead tunnel to speed up tunnel failover. Which two key configuration changes must the administrator make on FortiGate to meet the requirements? (Choose two.)</p>
+  
+  <form>
+    <div>
+      <input type="checkbox" name="vpnConfiguration" value="A" id="optionA_10"> 
+      <label for="optionA_10">A. Enable Dead Peer Detection.</label><br>
+      
+      <input type="checkbox" name="vpnConfiguration" value="B" id="optionB_10"> 
+      <label for="optionB_10">B. Enable Auto-negotiate and Autokey Keep Alive on the phase 2 configuration of both tunnels.</label><br>
+      
+      <input type="checkbox" name="vpnConfiguration" value="C" id="optionC_10"> 
+      <label for="optionC_10">C. Configure a lower distance on the static route for the primary tunnel, and a higher distance on the static route for the secondary tunnel.</label><br>
+      
+      <input type="checkbox" name="vpnConfiguration" value="D" id="optionD_10"> 
+      <label for="optionD_10">D. Configure a higher distance on the static route for the primary tunnel, and a lower distance on the static route for the secondary tunnel.</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question10">Solution</button>
+
+  <div id="solutionInfo_question10" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q1/img/q10.png">
+    <p>A. Enable Dead Peer Detection (DPD): This mechanism helps in identifying whether the remote VPN peer is reachable. By enabling DPD, FortiGate can actively check the status of the primary tunnel and reroute traffic to the secondary tunnel if the primary goes down, minimizing downtime.</p>
+    
+    <p>C. Configure a lower distance on the static route for the primary tunnel, and a higher distance on the static route for the secondary tunnel: This ensures that traffic flows through the primary tunnel under normal circumstances, as it has a lower administrative distance. The secondary tunnel is used only if the primary tunnel is unavailable.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/432685/manual-redundant-vpn-configuration" target="_blank">Manual Redundant VPN Configuration - Fortinet Documentation</a></li>
+    </ul>
+    
+    <p id="correctAnswers_question10" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. Enable Dead Peer Detection.<br>
+      C. Configure a lower distance on the static route for the primary tunnel, and a higher distance on the static route for the secondary tunnel.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer10.js"></script>

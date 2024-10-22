@@ -1,0 +1,43 @@
+<div>
+  <h2>Question 14</h2>
+  <p>Refer to the exhibit, which shows the IPS sensor configuration.<br>
+    <a href="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q1/img/q14.png" target="_blank">Exhibit Link</a>
+  </p>
+  <p>If traffic matches this IPS sensor, which two actions is the sensor expected to take? (Choose two.)</p>
+  
+  <form>
+    <div>
+      <input type="checkbox" name="ipsActions" value="A" id="optionA_14"> 
+      <label for="optionA_14">A. The sensor will gather a packet log for all matched traffic.</label><br>
+      
+      <input type="checkbox" name="ipsActions" value="B" id="optionB_14"> 
+      <label for="optionB_14">B. The sensor will reset all connections that match these signatures.</label><br>
+      
+      <input type="checkbox" name="ipsActions" value="C" id="optionC_14"> 
+      <label for="optionC_14">C. The sensor will allow attackers matching the Microsoft.Windows.iSCSI.Target.DoS signature.</label><br>
+      
+      <input type="checkbox" name="ipsActions" value="D" id="optionD_14"> 
+      <label for="optionD_14">D. The sensor will block all attacks aimed at Windows servers.</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question14">Solution</button>
+
+  <div id="solutionInfo_question14" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>The IPS sensor is configured to generate logs for all matched traffic (A). However, due to the order of the signatures, it will allow traffic matching the Microsoft.Windows.iSCSI.Target.DoS signature (C). Other attacks aimed at Windows servers would be blocked, but the specific DoS signature is allowed, making option D incorrect.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://learn.microsoft.com/en-us/windows-server/storage/iscsi/iscsi-target-server" target="_blank">Microsoft iSCSI Target Server Documentation</a></li>
+    </ul>
+    
+    <p id="correctAnswers_question14" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. The sensor will gather a packet log for all matched traffic.<br>
+      C. The sensor will allow attackers matching the Microsoft.Windows.iSCSI.Target.DoS signature.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer14.js"></script>

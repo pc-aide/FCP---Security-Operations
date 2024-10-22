@@ -1,0 +1,41 @@
+<div>
+  <h2>Question 16</h2>
+  <p>What is the primary FortiGate election process when the HA override setting is disabled?</p>
+  
+  <form>
+    <div>
+      <input type="radio" name="electionProcess" value="A" id="optionA_16"> 
+      <label for="optionA_16">A. Connected monitored ports > Priority > System uptime > FortiGate serial number</label><br>
+      
+      <input type="radio" name="electionProcess" value="B" id="optionB_16"> 
+      <label for="optionB_16">B. Connected monitored ports > System uptime > Priority > FortiGate serial number</label><br>
+      
+      <input type="radio" name="electionProcess" value="C" id="optionC_16"> 
+      <label for="optionC_16">C. Connected monitored ports > Priority > HA uptime > FortiGate serial number</label><br>
+      
+      <input type="radio" name="electionProcess" value="D" id="optionD_16"> 
+      <label for="optionD_16">D. Connected monitored ports > HA uptime > Priority > FortiGate serial number</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question16">Solution</button>
+
+  <div id="solutionInfo_question16" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q1/img/q16.png">
+    <p>When the HA override setting is disabled, FortiGate's primary election process follows the order of: 
+       the number of connected monitored ports (M), followed by HA uptime (U), then Priority (P), and finally the FortiGate serial number (S).</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-FortiGate-HA-Primary-unit-selection-process-when/ta-p/249745" target="_blank">Fortinet Community - HA Primary Unit Selection Process</a></li>
+    </ul>
+    
+    <p id="correctAnswers_question16" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      D. Connected monitored ports > HA uptime > Priority > FortiGate serial number
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer16.js"></script>

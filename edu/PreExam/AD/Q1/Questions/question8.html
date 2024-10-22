@@ -1,0 +1,39 @@
+<div>
+  <h2>Question 8</h2>
+  <p>Refer to the exhibit. In the network shown in the exhibit, the web client cannot connect to the HTTP web server. The administrator runs the FortiGate built-in sniffer and gets the output shown in the exhibit. What should the administrator do next, to troubleshoot the problem?</p>
+  
+  <form>
+    <div>
+      <input type="radio" name="troubleshootingStep" value="A" id="optionA_8"> 
+      <label for="optionA_8">A. Execute a debug flow</label><br>
+      
+      <input type="radio" name="troubleshootingStep" value="B" id="optionB_8"> 
+      <label for="optionB_8">B. Capture the traffic using an external sniffer connected to port1</label><br>
+      
+      <input type="radio" name="troubleshootingStep" value="C" id="optionC_8"> 
+      <label for="optionC_8">C. Execute another sniffer on FortiGate, this time with the filter "host 10.0.1.10"</label><br>
+      
+      <input type="radio" name="troubleshootingStep" value="D" id="optionD_8"> 
+      <label for="optionD_8">D. Run a sniffer on the web server</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question8">Solution</button>
+
+  <div id="solutionInfo_question8" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>Executing a debug flow on FortiGate will help determine if there is a firewall policy that is not matching, which is a common issue when clients cannot connect to servers. This step allows you to see the packet flow and identify any potential blocking rules or misconfigurations.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/54688/debugging-the-packet-flow" target="_blank">Debugging the Packet Flow - Fortinet Documentation</a></li>
+    </ul>
+    
+    <p id="correctAnswers_question8" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. Execute a debug flow
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer8.js"></script>

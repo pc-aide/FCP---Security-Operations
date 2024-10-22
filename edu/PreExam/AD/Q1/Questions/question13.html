@@ -1,0 +1,45 @@
+<div>
+  <h2>Question 13</h2>
+  <p>When FortiGate performs SSL/SSH full inspection, you can decide how it should react when it detects an invalid certificate. Which three actions are valid actions that FortiGate can perform when it detects an invalid certificate? (Choose three.)</p>
+  
+  <form>
+    <div>
+      <input type="checkbox" name="sslActions" value="A" id="optionA_13"> 
+      <label for="optionA_13">A. Allow & Warning</label><br>
+      
+      <input type="checkbox" name="sslActions" value="B" id="optionB_13"> 
+      <label for="optionB_13">B. Trust & Allow</label><br>
+      
+      <input type="checkbox" name="sslActions" value="C" id="optionC_13"> 
+      <label for="optionC_13">C. Allow</label><br>
+      
+      <input type="checkbox" name="sslActions" value="D" id="optionD_13"> 
+      <label for="optionD_13">D. Block & Warning</label><br>
+      
+      <input type="checkbox" name="sslActions" value="E" id="optionE_13"> 
+      <label for="optionE_13">E. Block</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question13">Solution</button>
+
+  <div id="solutionInfo_question13" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>The valid actions are "Allow & Warning", "Trust & Allow", and "Block". Allow is not a valid option, and the untrusted certificate warning makes option A correct.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://help.fortinet.com/fortiproxy/10/Content/Admin%20Guides/FPX-AdminGuide/500_Policy/503_SSL-inspection.htm" target="_blank">FortiProxy SSL Inspection - Fortinet Documentation</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/f10cede7-228d-11ef-8c42-fa163e15d75b/FortiOS-7.6.0-Administration_Guide.pdf" target="_blank">FortiOS 7.6 Administration Guide</a></li>
+    </ul>
+    
+    <p id="correctAnswers_question13" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. Allow & Warning<br>
+      B. Trust & Allow<br>
+      E. Block
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer13.js"></script>

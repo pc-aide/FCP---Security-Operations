@@ -1,0 +1,41 @@
+<div>
+  <h2>Question 20</h2>
+  <p>Which two statements describe how the RPF check is used? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="rpfCheck" value="A" id="optionA_20">
+      <label for="optionA_20">A. The RPF check is run on the first sent packet of any new session.</label><br>
+
+      <input type="checkbox" name="rpfCheck" value="B" id="optionB_20">
+      <label for="optionB_20">B. The RPF check is run on the first reply packet of any new session.</label><br>
+
+      <input type="checkbox" name="rpfCheck" value="C" id="optionC_20">
+      <label for="optionC_20">C. The RPF check is run on the first sent and reply packet of any new session.</label><br>
+
+      <input type="checkbox" name="rpfCheck" value="D" id="optionD_20">
+      <label for="optionD_20">D. The RPF check is a mechanism that protects FortiGate and the network from IP spoofing attacks.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question20">Solution</button>
+
+  <div id="solutionInfo_question20" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>A and D are correct. Study guide 7.4 Page 86 states that FortiGate performs an RPF check only on the first packet of a new session. After the first packet passes the RPF check, FortiGate doesn’t perform any additional RPF checks on that session. The RPF check is also a mechanism that protects FortiGate and the network from IP spoofing attacks.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/41a91d6d-9b7f-11ed-8e6d-fa163e15d75b/FortiOS-7.4.0-New_Features_Guide.pdf" target="_blank">Fortinet Documentation - FortiOS 7.4.0 New Features Guide</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.4.0/new-features/770045/overview" target="_blank">Fortinet Documentation - Overview of New Features</a></li>
+    </ul>
+
+    <p id="correctAnswers_question20" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. The RPF check is run on the first sent packet of any new session.<br>
+      D. The RPF check is a mechanism that protects FortiGate and the network from IP spoofing attacks.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer20.js"></script>

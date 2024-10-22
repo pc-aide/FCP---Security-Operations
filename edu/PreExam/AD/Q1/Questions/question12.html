@@ -1,0 +1,39 @@
+<div>
+  <h2>Question 12</h2>
+  <p>An employee needs to connect to the office through a high-latency internet connection. Which SSL VPN setting should the administrator adjust to prevent SSL VPN negotiation failure?</p>
+  
+  <form>
+    <div>
+      <input type="radio" name="vpnSetting" value="A" id="optionA_12"> 
+      <label for="optionA_12">A. SSL VPN idle-timeout</label><br>
+      
+      <input type="radio" name="vpnSetting" value="B" id="optionB_12"> 
+      <label for="optionB_12">B. SSL VPN login-timeout</label><br>
+      
+      <input type="radio" name="vpnSetting" value="C" id="optionC_12"> 
+      <label for="optionC_12">C. SSL VPN dtls-hello-timeout</label><br>
+      
+      <input type="radio" name="vpnSetting" value="D" id="optionD_12"> 
+      <label for="optionD_12">D. SSL VPN session-ttl</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question12">Solution</button>
+
+  <div id="solutionInfo_question12" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>This setting controls the timeout for the DTLS hello packet. If the connection has high latency, adjusting this timeout allows more time for the handshake, preventing negotiation failures.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-SSL-VPN-timers-explanation-and-SSL-VPN-Login/ta-p/203615" target="_blank">SSL VPN Timers Explanation - Fortinet Community</a></li>
+    </ul>
+    
+    <p id="correctAnswers_question12" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      C. SSL VPN dtls-hello-timeout
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer12.js"></script>

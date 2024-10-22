@@ -1,0 +1,40 @@
+<div>
+  <h2>Question 7</h2>
+  <p>Which method allows management access to the FortiGate CLI without network connectivity?</p>
+  
+  <form>
+    <div>
+      <input type="radio" name="managementAccess" value="A" id="optionA_7"> 
+      <label for="optionA_7">A. CLI console widget</label><br>
+      
+      <input type="radio" name="managementAccess" value="B" id="optionB_7"> 
+      <label for="optionB_7">B. Serial console</label><br>
+      
+      <input type="radio" name="managementAccess" value="C" id="optionC_7"> 
+      <label for="optionC_7">C. Telnet console</label><br>
+      
+      <input type="radio" name="managementAccess" value="D" id="optionD_7"> 
+      <label for="optionD_7">D. SSH console</label>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question7">Solution</button>
+
+  <div id="solutionInfo_question7" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>The serial console on a FortiGate allows you to connect directly to the device's terminal without going through the network, unlike protocols such as SSH or Telnet, which require a network connection. This is useful for initial configuration or in case of network failure, providing direct access to the CLI.</p>
+    <p>To use the serial console, you need a serial cable (e.g., an RJ45 to DB9 cable) and terminal software like PuTTY or Tera Term, configured with the correct baud rate (9600 bps by default for FortiGate).</p>
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/901037/connecting-to-the-cli" target="_blank">Connecting to the CLI - Fortinet Documentation</a></li>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-connect-to-the-FortiGate-and-FortiAP/ta-p/214839" target="_blank">How to connect to the FortiGate and FortiAP - Fortinet Community</a></li>
+    </ul>
+    
+    <p id="correctAnswers_question7" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      B. Serial console
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer7.js"></script>
