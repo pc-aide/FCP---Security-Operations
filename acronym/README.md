@@ -41,3 +41,4 @@
 |34|LAG|Link Aggregation Group|
 |35|HB|Heartbeat|
 |36|SNAT|Source Network Address Translation|
+|37|ASIC|Application-specific integrated circuit|
