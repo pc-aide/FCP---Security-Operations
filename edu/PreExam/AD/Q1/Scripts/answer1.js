@@ -5,14 +5,14 @@ function attachSolutionButtonListeners_question1(button) {
     const correctAnswers = ['C', 'D'];
 
     // Get selected answers
-    const selectedAnswers = Array.from(document.querySelectorAll('input[name="routingOption"]:checked'))
+    const selectedAnswers = Array.from(document.querySelectorAll('input[name="routingStatements"]:checked'))
       .map(input => input.value);
 
     // Show correct/incorrect styling for each option
-    document.querySelectorAll('input[name="routingOption"]').forEach(input => {
+    document.querySelectorAll('input[name="routingStatements"]').forEach(input => {
       const isChecked = selectedAnswers.includes(input.value);
       const isCorrect = correctAnswers.includes(input.value);
-      
+
       if (isChecked) {
         if (isCorrect) {
           input.parentElement.classList.add('highlight');
@@ -37,7 +37,7 @@ function attachSolutionButtonListeners_question1(button) {
         if (correctAnswersElement) {
           correctAnswersElement.style.display = 'block';
         }
-        
+
         // Show user's answers if incorrect
         const yourAnswerElement = document.getElementById('yourAnswer_question1');
         if (yourAnswerElement) {
