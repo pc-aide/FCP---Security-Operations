@@ -10,7 +10,7 @@
 |3|VDOM|Virtual Domain|
 |4|LLDP|Link Layer Discovery Protocol|
 |5|FDN|FortiGuard Distribution Network|
-|6|OCSP|
+|6|OCSP|Online Certificate Status Protocol|
 |7|NAT|Network Address Translate|
 |8|UTM|Unified Threat Management|
 |9|ISDB|Internet SErvice Database|
