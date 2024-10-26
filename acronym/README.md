@@ -45,3 +45,4 @@
 |38|CPs|Content Processors|
 |39|SNMP|
 |40|VLANs|Virtual Local Area Networks|
+|41|LACP|Link Aggregation Control Protocol|
