@@ -34,3 +34,4 @@
 |27|mirai botnet - IoT 2016|
 |28|RPF|<ins>Feasible RPF (default)</ins><br/><br/><ins>Strict RPF</ins><br/>|<img src="https://i.imgur.com/2iMm3tU.png"><br/>eg - packet dropped by the RPF<br/><img src="https://i.imgur.com/txpgrec.jpeg"><br/>Strict RPF - eg<br/><img src="https://i.imgur.com/sj1rGGJ.png"><br/>the packet'll be dropped, not check route2<br/><img src="https://i.imgur.com/ckZ2HzK.png">|
 |29||<ins>John the Ripper</ins><br/><br/><ins>L0phtCrack</ins>|
+|30|Link Aggregation||
