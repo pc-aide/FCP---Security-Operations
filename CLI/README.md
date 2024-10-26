@@ -42,3 +42,10 @@
 |n|name|eg|O/P|
 |-|----|--|---|
 |1|ping-options|`execute ping-options`||
+
+---
+
+## show
+|n|name|eg|O/P|
+|-|----|--|---|
+|1|full config|`show full-configuration`|
