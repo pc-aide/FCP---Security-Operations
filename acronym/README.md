@@ -43,3 +43,4 @@
 |36|SNAT|Source Network Address Translation|
 |37|ASIC|Application-specific integrated circuit|
 |38|CPs|Content Processors|
+|39|SNMP|
