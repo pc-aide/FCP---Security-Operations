@@ -44,3 +44,4 @@
 |37|ASIC|Application-specific integrated circuit|
 |38|CPs|Content Processors|
 |39|SNMP|
+|40|VLANs|Virtual Local Area Networks|
