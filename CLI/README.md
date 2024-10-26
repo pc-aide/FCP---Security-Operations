@@ -22,6 +22,7 @@
 |-|----|--|---|
 |1|proxy-inspection|`config system settings`<br/>`set gui-proxy-inspection enable`<br/>`end`|<img src="https://i.imgur.com/Fp3YBoR.png">|
 |2|feasible rpf(default)|`conf sys settings`<br/>`set strict-src-check disable`|<img src="https://i.imgur.com/q6xaAmR.png">|
+|3|vdom adm|`config system global`<br/>`set vdom-mode multi-vdom`<br/>`end`|
 
 ---
 
