@@ -1,21 +1,21 @@
 <div>
   <h2>Question 1</h2>
-  <p>Refer to the exhibit.<br>
-  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q1/img/Q1.png"></p>
+  <p>Refer to the exhibit.</p>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q1/img/Q1.png" alt="Exhibit for Question 1">
   <p>Which two statements are true about the routing entries in this database table? (Choose two.)</p>
 
   <form>
     <div>
-      <input type="checkbox" name="routingOption" value="A" id="optionA_1"> 
+      <input type="checkbox" name="routingStatements" value="A" id="optionA_1">
       <label for="optionA_1">A. All of the entries in the routing database table are installed in the FortiGate routing table.</label><br>
-      
-      <input type="checkbox" name="routingOption" value="B" id="optionB_1"> 
+
+      <input type="checkbox" name="routingStatements" value="B" id="optionB_1">
       <label for="optionB_1">B. The port2 interface is marked as inactive.</label><br>
-      
-      <input type="checkbox" name="routingOption" value="C" id="optionC_1"> 
+
+      <input type="checkbox" name="routingStatements" value="C" id="optionC_1">
       <label for="optionC_1">C. Both default routes have different administrative distances.</label><br>
-      
-      <input type="checkbox" name="routingOption" value="D" id="optionD_1"> 
+
+      <input type="checkbox" name="routingStatements" value="D" id="optionD_1">
       <label for="optionD_1">D. The default route on port2 is marked as the standby route.</label>
     </div>
   </form>
@@ -25,27 +25,18 @@
   <div id="solutionInfo_question1" class="solutionInfo" style="display: none;">
     <p><strong>Explanation:</strong></p>
     <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q1/img/routing%20tbl%20-%20cli%20-%20eg.png">
-    <p>S  0.0.0.0/0 [20/0] via 10.200.2.254, port2, [1/0] -- distance 20<br>
-       S  *> 0.0.0.0/0 [10/0] via 10.200.1.254, port1, [1/0] -- distance 10</p>
     <p>The static route via port2 has a higher administrative distance, making it a standby route, while the route via port1 is the preferred one.</p>
+
     <p><strong>References:</strong></p>
     <ul>
-      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/139692/routing-concepts" target="_blank">Routing Concepts - Fortinet Docs</a></li>
-      <li><a href="https://docs.fortinet.com/document/fortigate/7.0.0/sd-wan-sd-branch-deployment-guide/629003/viewing-the-fortigate-routing-table" target="_blank">Viewing the Routing Table - Fortinet Docs</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/139692/routing-concepts" target="_blank">Routing Concepts - Fortinet Documentation</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.0.0/sd-wan-sd-branch-deployment-guide/629003/viewing-the-fortigate-routing-table" target="_blank">Viewing the Routing Table - Fortinet Documentation</a></li>
     </ul>
 
     <p id="correctAnswers_question1" style="display: none;">
-      <strong>Correct Answers:</strong><br>
+      <strong>Correct Answer:</strong><br>
       C. Both default routes have different administrative distances.<br>
       D. The default route on port2 is marked as the standby route.
-    </p>
-
-    <p id="yourAnswer_question1" style="display: none;">
-      <strong>Your Answers:</strong><br>
-      <span id="yourAnswerOptionA_1"></span><br>
-      <span id="yourAnswerOptionB_1"></span><br>
-      <span id="yourAnswerOptionC_1"></span><br>
-      <span id="yourAnswerOptionD_1"></span>
     </p>
   </div>
 </div>
