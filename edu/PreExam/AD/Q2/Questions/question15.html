@@ -1,0 +1,41 @@
+<div>
+  <h2>Question 15</h2>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q2/img/q15.png">
+  <p>FortiGate has two separate firewall policies for Sales and Engineering to access the same web server with the same security profiles. Which action must the administrator perform to consolidate the two policies into one?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="consolidatePolicies" value="A" id="optionA_15">
+      <label for="optionA_15">A. Enable Multiple Interface Policies to select port1 and port2 in the same firewall policy.</label><br>
+
+      <input type="radio" name="consolidatePolicies" value="B" id="optionB_15">
+      <label for="optionB_15">B. Create an Interface Group that includes port1 and port2 to create a single firewall policy.</label><br>
+
+      <input type="radio" name="consolidatePolicies" value="C" id="optionC_15">
+      <label for="optionC_15">C. Select port1 and port2 subnets in a single firewall policy.</label><br>
+
+      <input type="radio" name="consolidatePolicies" value="D" id="optionD_15">
+      <label for="optionD_15">D. Replace port1 and port2 with the any interface in a single firewall policy.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question15">Solution</button>
+
+  <div id="solutionInfo_question15" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q2/img/q15.gif">
+    <p>A is correct. You need to enable the Multiple Interface option first, and then select port1 and port2 in a single firewall policy (FortiGate 7.4 Administrator, page 37).</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-configure-multiple-interfaces-on-a-firewall/ta-p/193506" target="_blank">Fortinet - Configuring Multiple Interfaces on a Firewall</a></li>
+    </ul>
+
+    <p id="correctAnswers_question15" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. Enable Multiple Interface Policies to select port1 and port2 in the same firewall policy.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer15.js"></script>

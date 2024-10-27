@@ -1,0 +1,47 @@
+<div>
+  <h2>Question 18</h2>
+  <p>Refer to the exhibit:</p>
+  <p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q2/img/q18.png" alt="IPsec tunnel troubleshooting diagram">
+  </p>
+  <p>A network administrator is troubleshooting an IPsec tunnel between two FortiGate devices. The administrator has determined that phase 1 failed to come up. The administrator has also re-entered the pre-shared key on both FortiGate devices to make sure they match. Based on the phase 1 configuration and the diagram shown in the exhibit, which two configuration changes can the administrator make to bring phase 1 up? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="ipsecChanges" value="A" id="optionA_18">
+      <label for="optionA_18">A. On HQ-FortiGate, disable Diffie-Helman group 2.</label><br>
+
+      <input type="checkbox" name="ipsecChanges" value="B" id="optionB_18">
+      <label for="optionB_18">B. On Remote-FortiGate, set port2 as Interface.</label><br>
+
+      <input type="checkbox" name="ipsecChanges" value="C" id="optionC_18">
+      <label for="optionC_18">C. On both FortiGate devices, set Dead Peer Detection to On Demand.</label><br>
+
+      <input type="checkbox" name="ipsecChanges" value="D" id="optionD_18">
+      <label for="optionD_18">D. On HQ-FortiGate, set IKE mode to Main (ID protection).</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question18">Solution</button>
+
+  <div id="solutionInfo_question18" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>B. On Remote-FortiGate, set port2 as Interface: The diagram indicates that port2 is currently not selected under ‘Interface’ for Remote-FortiGate. Aligning this setting with HQ-FortiGate, which has port1 set as Interface, might resolve inconsistencies.</p>
+    <p>D. On HQ-FortiGate, set IKE mode to Main (ID protection): The current setting on HQ-FortiGate is Aggressive for IKE mode, while Remote-FortiGate is set to Main mode. Matching these settings may help in establishing phase 1 of the IPsec tunnel.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/5.6.0/cookbook/786021/configuring-the-ipsec-vpn" target="_blank">Fortinet Cookbook - Configuring IPsec VPN</a></li>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-configure-VPN-Site-to-Site-between/ta-p/197922" target="_blank">Technical Tip: VPN Site-to-Site Configuration</a></li>
+      <li><a href="https://kb.acreto.net/how-to/connect/ipsec/fortinet-cli/" target="_blank">Fortinet CLI - IPsec Connection Guide</a></li>
+    </ul>
+
+    <p id="correctAnswers_question18" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      B. On Remote-FortiGate, set port2 as Interface.<br>
+      D. On HQ-FortiGate, set IKE mode to Main (ID protection).
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer18.js"></script>

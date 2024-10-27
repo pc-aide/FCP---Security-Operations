@@ -1,0 +1,39 @@
+<div>
+  <h2>Question 6</h2>
+  <p>Which inspection mode does FortiGate use for application profiles if it is configured as a profile-based next-generation firewall (NGFW)?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="inspectionMode" value="A" id="optionA_6">
+      <label for="optionA_6">A. Full content inspection</label><br>
+
+      <input type="radio" name="inspectionMode" value="B" id="optionB_6">
+      <label for="optionB_6">B. Proxy-based inspection</label><br>
+
+      <input type="radio" name="inspectionMode" value="C" id="optionC_6">
+      <label for="optionC_6">C. Certificate inspection</label><br>
+
+      <input type="radio" name="inspectionMode" value="D" id="optionD_6">
+      <label for="optionD_6">D. Flow-based inspection</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question6">Solution</button>
+
+  <div id="solutionInfo_question6" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>Page 250 of the Study Guide. "You can configure application control in proxy-based and flow-based firewall policies. However, because application control uses the IPS engine, which uses flow-based inspection, the INSPECTION is always flow-based." In profile-based NGFW mode, FortiGate applies security profiles like Application Control at the flow level. This means the firewall inspects traffic as it passes through without fully proxying or buffering it. The firewall can detect and control applications by inspecting network traffic in real-time using signatures and heuristics. D is correct.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://help.fortinet.com/fos50hlp/56/Content/FortiOS/fortigate-security-profiles/Inspection%20Modes/flow_mode.htm" target="_blank">Fortinet Documentation - Flow Mode Inspection</a></li>
+    </ul>
+
+    <p id="correctAnswers_question6" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      D. Flow-based inspection
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer6.js"></script>

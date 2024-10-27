@@ -1,0 +1,42 @@
+<div>
+  <h2>Question 16</h2>
+  <p>Refer to the exhibit, which shows a partial configuration from the remote authentication server. Why does the FortiGate administrator need this configuration?</p>
+  
+  <!-- Image reference -->
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q2/img/q16.png" alt="FortiGate Remote Authentication Configuration" style="max-width: 100%; height: auto;">
+
+  <form>
+    <div>
+      <input type="radio" name="remoteAuthConfig" value="A" id="optionA_16">
+      <label for="optionA_16">A. To authenticate only the Training user group.</label><br>
+
+      <input type="radio" name="remoteAuthConfig" value="B" id="optionB_16">
+      <label for="optionB_16">B. To set up a RADIUS server Secret.</label><br>
+
+      <input type="radio" name="remoteAuthConfig" value="C" id="optionC_16">
+      <label for="optionC_16">C. To authenticate and match the Training OU on the RADIUS server.</label><br>
+
+      <input type="radio" name="remoteAuthConfig" value="D" id="optionD_16">
+      <label for="optionD_16">D. To authenticate Any FortiGate user groups.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question16">Solution</button>
+
+  <div id="solutionInfo_question16" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>A is correct. This configuration is specifically used to authenticate users belonging to the "Training" user group, as indicated by the Fortinet-Group-Name attribute.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/29900/user-groups" target="_blank">Fortinet - User Groups Documentation</a></li>
+    </ul>
+
+    <p id="correctAnswers_question16" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. To authenticate only the Training user group.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer16.js"></script>

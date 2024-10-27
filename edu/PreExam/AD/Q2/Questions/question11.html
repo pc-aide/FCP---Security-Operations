@@ -1,0 +1,41 @@
+<div>
+  <h2>Question 11</h2>
+  <p>The HTTP inspection process in web filtering follows a specific order when multiple features are enabled in the web filter profile. Which order must FortiGate use when the web filter profile has features such as safe search enabled?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="httpInspectionOrder" value="A" id="optionA_11">
+      <label for="optionA_11">A. FortiGuard category filter and rating filter.</label><br>
+
+      <input type="radio" name="httpInspectionOrder" value="B" id="optionB_11">
+      <label for="optionB_11">B. Static domain filter, SSL inspection filter, and external connectors filters.</label><br>
+
+      <input type="radio" name="httpInspectionOrder" value="C" id="optionC_11">
+      <label for="optionC_11">C. DNS-based web filter and proxy-based web filter.</label><br>
+
+      <input type="radio" name="httpInspectionOrder" value="D" id="optionD_11">
+      <label for="optionD_11">D. Static URL filter, FortiGuard category filter, and advanced filters.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question11">Solution</button>
+
+  <div id="solutionInfo_question11" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>D is correct. The order for HTTP inspection in the web filter profile is first to apply the Static URL filter, followed by the FortiGuard category filter, and finally the advanced filters.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/371670/static-url-filter" target="_blank">FortiGate 7.6.0 Administration Guide - Static URL Filter</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/615462/url-filter" target="_blank">FortiGate Cookbook - URL Filter</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/16zqdxd/ftg_web_filter_static_url_filter_not_taking/" target="_blank">Reddit Discussion on FortiGate Web Filter</a></li>
+    </ul>
+
+    <p id="correctAnswers_question11" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      D. Static URL filter, FortiGuard category filter, and advanced filters.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer11.js"></script>

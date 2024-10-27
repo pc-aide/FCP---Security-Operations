@@ -1,0 +1,41 @@
+<div>
+  <h2>Question 19</h2>
+  <p>A network administrator has configured an SSL/SSH inspection profile defined for full SSL inspection and set with a private CA certificate. The firewall policy that allows the traffic uses this profile for SSL inspection and performs web filtering. When visiting any HTTPS websites, the browser reports certificate warning errors. What is the reason for the certificate warning errors?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="sslErrors" value="A" id="optionA_19">
+      <label for="optionA_19">A. The SSL cipher compliance option is not enabled on the SSL inspection profile. This setting is required when the SSL inspection profile is defined with a private CA certificate.</label><br>
+
+      <input type="radio" name="sslErrors" value="B" id="optionB_19">
+      <label for="optionB_19">B. The certificate used by FortiGate for SSL inspection does not contain the required certificate extensions.</label><br>
+
+      <input type="radio" name="sslErrors" value="C" id="optionC_19">
+      <label for="optionC_19">C. The browser does not recognize the certificate in use as signed by a trusted CA.</label><br>
+
+      <input type="radio" name="sslErrors" value="D" id="optionD_19">
+      <label for="optionD_19">D. With full SSL inspection it is not possible to avoid certificate warning errors at the browser level.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question19">Solution</button>
+
+  <div id="solutionInfo_question19" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>Page 173 - study guide administration - The browser does not recognize the certificate in use as signed by a trusted CA. This happens because the private CA certificate is not in the trusted root CA store of the browser.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-Certificate-error-when-accessing-blocked-page/ta-p/191051" target="_blank">Technical Tip: Certificate error when accessing blocked page</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/14k304l/fortigate_ssl_error_on_popular_sites/" target="_blank">Reddit Discussion on FortiGate SSL Errors</a></li>
+      <li><a href="https://www.fortinetguru.com/2019/05/troubleshooting-certificates-2/" target="_blank">Fortinet Guru - Troubleshooting Certificates</a></li>
+    </ul>
+
+    <p id="correctAnswers_question19" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      C. The browser does not recognize the certificate in use as signed by a trusted CA.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer19.js"></script>

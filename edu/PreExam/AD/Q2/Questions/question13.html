@@ -1,0 +1,40 @@
+<div>
+  <h2>Question 13</h2>
+  <p>An administrator configured a FortiGate to act as a collector for agentless polling mode. What must the administrator add to the FortiGate device to retrieve AD user group information?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="ADUserGroup" value="A" id="optionA_13">
+      <label for="optionA_13">A. RADIUS server</label><br>
+
+      <input type="radio" name="ADUserGroup" value="B" id="optionB_13">
+      <label for="optionB_13">B. DHCP server</label><br>
+
+      <input type="radio" name="ADUserGroup" value="C" id="optionC_13">
+      <label for="optionC_13">C. Windows server</label><br>
+
+      <input type="radio" name="ADUserGroup" value="D" id="optionD_13">
+      <label for="optionD_13">D. LDAP server</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question13">Solution</button>
+
+  <div id="solutionInfo_question13" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>Pag 126 FortiGate_7.4_Administrator - D is correct. When FortiGate is acting as a collector for agentless polling mode, you must select "Poll Active Directory Server" and configure the IP addresses and AD administrator credentials for each Domain Controller (DC). FortiGate uses LDAP to query Active Directory (AD) to retrieve user group information. Therefore, you must add the LDAP server to the Poll Active Directory Server configuration.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/102264/configuring-an-ldap-server" target="_blank">Fortinet Documentation - Configuring an LDAP server</a></li>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-configure-FortiGate-to-use-an-LDAP-server/ta-p/196141" target="_blank">Fortinet Community - How to configure FortiGate to use an LDAP server</a></li>
+    </ul>
+
+    <p id="correctAnswers_question13" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      D. LDAP server
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer13.js"></script>

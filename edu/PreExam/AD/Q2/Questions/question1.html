@@ -1,0 +1,44 @@
+<div>
+  <h2>Question 1</h2>
+  <p>Which three strategies are valid SD-WAN rule strategies for member selection? (Choose three.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="sdwanStrategy" value="A" id="optionA_1">
+      <label for="optionA_1">A. Manual with load balancing</label><br>
+
+      <input type="checkbox" name="sdwanStrategy" value="B" id="optionB_1">
+      <label for="optionB_1">B. Lowest Cost (SLA) with load balancing</label><br>
+
+      <input type="checkbox" name="sdwanStrategy" value="C" id="optionC_1">
+      <label for="optionC_1">C. Best Quality with load balancing</label><br>
+
+      <input type="checkbox" name="sdwanStrategy" value="D" id="optionD_1">
+      <label for="optionD_1">D. Lowest Quality (SLA) with load balancing</label><br>
+
+      <input type="checkbox" name="sdwanStrategy" value="E" id="optionE_1">
+      <label for="optionE_1">E. Lowest Cost (SLA) without load balancing</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question1">Solution</button>
+
+  <div id="solutionInfo_question1" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>When you select Best Quality the "Load Balancing" toggle disappears from the UI. When you select Lowest Cost (SLA) you can choose to enable or disable load balancing. Ref: FGT 7.4 Administration study Guide in Pag357 said that Interface selection strategy: *Manual, *Best Quality, *Lowest cost (SLA).</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.4.4/administration-guide/342836/lowest-cost-sla-strategy" target="_blank">Fortinet Documentation - Lowest Cost SLA Strategy</a></li>
+    </ul>
+
+    <p id="correctAnswers_question1" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. Manual with load balancing<br>
+      B. Lowest Cost (SLA) with load balancing<br>
+      E. Lowest Cost (SLA) without load balancing
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer1.js"></script>

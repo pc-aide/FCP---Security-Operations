@@ -1,0 +1,43 @@
+<div>
+  <h2>Question 8</h2>
+  <p>Refer to the exhibit.</p>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q2/img/q8.png" alt="FortiGate Packet Drop Exhibit" style="max-width: 100%; height: auto;">
+
+  <p>Why did FortiGate drop the packet?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="packetDropReason" value="A" id="optionA_8">
+      <label for="optionA_8">A. It matched an explicitly configured firewall policy with the action DENY.</label><br>
+
+      <input type="radio" name="packetDropReason" value="B" id="optionB_8">
+      <label for="optionB_8">B. It failed the RPF check.</label><br>
+
+      <input type="radio" name="packetDropReason" value="C" id="optionC_8">
+      <label for="optionC_8">C. The next-hop IP address is unreachable.</label><br>
+
+      <input type="radio" name="packetDropReason" value="D" id="optionD_8">
+      <label for="optionD_8">D. It matched the default implicit firewall policy.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question8">Solution</button>
+
+  <div id="solutionInfo_question8" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q2/img/q8_2.jpg">
+    <p>D is correct because policy ID 0 is the default drop policy. The message "Denied by forward policy check" indicates that it matched a deny policy, in this case, the implicit deny.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/Support-Forum/Implicit-Deny-in-FortiGate/m-p/299531#:~:text=The%20%22Implicit%20Deny%20policy%2C,or%20deny%20rules%20above%20it." target="_blank">Fortinet Community - Implicit Deny in FortiGate</a></li>
+    </ul>
+
+    <p id="correctAnswers_question8" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      D. It matched the default implicit firewall policy.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer8.js"></script>

@@ -1,0 +1,42 @@
+<div>
+  <h2>Question 5</h2>
+  <p>Refer to the exhibit to view the firewall policy.</p>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q2/img/q5.png" alt="Firewall Policy Exhibit" style="max-width: 100%; height: auto;">
+
+  <p>Why would the firewall policy not block a well-known virus, for example EICAR?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="fwPolicy" value="A" id="optionA_5">
+      <label for="optionA_5">A. The action on the firewall policy is not set to deny.</label><br>
+
+      <input type="radio" name="fwPolicy" value="B" id="optionB_5">
+      <label for="optionB_5">B. The firewall policy is not configured in proxy-based inspection mode.</label><br>
+
+      <input type="radio" name="fwPolicy" value="C" id="optionC_5">
+      <label for="optionC_5">C. Web filter is not enabled on the firewall policy to complement the antivirus profile.</label><br>
+
+      <input type="radio" name="fwPolicy" value="D" id="optionD_5">
+      <label for="optionD_5">D. The firewall policy does not apply deep content inspection.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question5">Solution</button>
+
+  <div id="solutionInfo_question5" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>D would be the most accurate response. While Flow-Based inspection mode is limited, it still can scan viruses if they are not overly complex. SSL certificate inspection only inspects the certificate of the encrypted traffic, ensuring it is valid and not self-signed or expired. It does not decrypt the actual content of the SSL/TLS traffic, meaning that any malicious content inside encrypted HTTPS traffic will pass through without being inspected. So here, we can assume the EICAR file was accessed via HTTPS.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/122078/deep-inspection" target="_blank">Fortinet Documentation - Deep Inspection</a></li>
+    </ul>
+
+    <p id="correctAnswers_question5" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      D. The firewall policy does not apply deep content inspection.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer5.js"></script>

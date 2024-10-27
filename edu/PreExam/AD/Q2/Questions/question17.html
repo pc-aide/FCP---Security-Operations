@@ -1,0 +1,45 @@
+<div>
+  <h2>Question 17</h2>
+  <p>Refer to the exhibits:</p>
+  <p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q2/img/q17.png" alt="FortiGate device diagram">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q2/img/q17_2.png" alt="IP pool configuration">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q2/img/q17_3.png" alt="Firewall policy objects">
+  </p>
+  <p>The WAN (port1) interface has the IP address 10.200.1.1/24. The LAN (port3) interface has the IP address 10.0.1.254/24. Which IP address will be used to source NAT (SNAT) the traffic if the user on Local-Client (10.0.1.10) pings the IP address of Remote-FortiGate (10.200.3.1)?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="snatAddress" value="A" id="optionA_17">
+      <label for="optionA_17">A. 10.200.1.1</label><br>
+
+      <input type="radio" name="snatAddress" value="B" id="optionB_17">
+      <label for="optionB_17">B. 10.200.1.149</label><br>
+
+      <input type="radio" name="snatAddress" value="C" id="optionC_17">
+      <label for="optionC_17">C. 10.200.1.99</label><br>
+
+      <input type="radio" name="snatAddress" value="D" id="optionD_17">
+      <label for="optionD_17">D. 10.200.1.49</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question17">Solution</button>
+
+  <div id="solutionInfo_question17" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>C. 10.200.1.99 is correct because it matches the policy ID 6 for the related traffic. Since All_TCP doesn't include ICMP, the matching rule is ID 2, which uses the IP Pool remote 1.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/898655/static-snat" target="_blank">Fortinet Documentation - Static NAT</a></li>
+    </ul>
+
+    <p id="correctAnswers_question17" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      C. 10.200.1.99
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer17.js"></script>

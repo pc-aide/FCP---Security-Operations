@@ -1,0 +1,39 @@
+<div>
+  <h2>Question 10</h2>
+  <p>Refer to the exhibit. Review the intrusion prevention system (IPS) profile signature settings shown in the exhibit. What do you conclude when adding the FTP.Login.Failed signature to the IPS sensor profile?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="ipsSignature" value="A" id="optionA_10">
+      <label for="optionA_10">A. Traffic matching the signature will be allowed and logged.</label><br>
+
+      <input type="radio" name="ipsSignature" value="B" id="optionB_10">
+      <label for="optionB_10">B. The signature setting uses a custom rating threshold.</label><br>
+
+      <input type="radio" name="ipsSignature" value="C" id="optionC_10">
+      <label for="optionC_10">C. The signature setting includes a group of other signatures.</label><br>
+
+      <input type="radio" name="ipsSignature" value="D" id="optionD_10">
+      <label for="optionD_10">D. Traffic matching the signature will be silently dropped and logged.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question10">Solution</button>
+
+  <div id="solutionInfo_question10" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>D is correct because the action in the signature list is set to block (as indicated at the top of the screenshot). If the action were set to default or allow, it would be A, but since the action for all signatures being added is to block, D is the correct conclusion.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://infosecmonkey.com/writting-custom-ips-signatures-on-fortigate/" target="_blank">Writing Custom IPS Signatures on FortiGate</a></li>
+    </ul>
+
+    <p id="correctAnswers_question10" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      D. Traffic matching the signature will be silently dropped and logged.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer10.js"></script>

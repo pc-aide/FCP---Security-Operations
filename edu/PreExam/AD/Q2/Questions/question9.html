@@ -1,0 +1,39 @@
+<div>
+  <h2>Question 9</h2>
+  <p>An administrator must enable a DHCP server on one of the directly connected networks on FortiGate. However, the administrator is unable to complete the process on the GUI to enable the service on the interface. In this scenario, what prevents the administrator from enabling DHCP service?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="dhcpIssue" value="A" id="optionA_9">
+      <label for="optionA_9">A. The role of the interface prevents setting a DHCP server.</label><br>
+
+      <input type="radio" name="dhcpIssue" value="B" id="optionB_9">
+      <label for="optionB_9">B. The DHCP server setting is available only on the CLI.</label><br>
+
+      <input type="radio" name="dhcpIssue" value="C" id="optionC_9">
+      <label for="optionC_9">C. Another interface is configured as the only DHCP server on FortiGate.</label><br>
+
+      <input type="radio" name="dhcpIssue" value="D" id="optionD_9">
+      <label for="optionD_9">D. The FortiGate model does not support the DHCP server.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question9">Solution</button>
+
+  <div id="solutionInfo_question9" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>A is correct because if the interface role is set to WAN, it will hide unnecessary settings on a WAN link, such as the DHCP server configuration.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-configure-FortiGate-as-DHCP-server/ta-p/197856" target="_blank">Fortinet Community - How to configure FortiGate as DHCP server</a></li>
+    </ul>
+
+    <p id="correctAnswers_question9" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. The role of the interface prevents setting a DHCP server.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer9.js"></script>

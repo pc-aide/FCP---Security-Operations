@@ -1,0 +1,41 @@
+<div>
+  <h2>Question 3</h2>
+  <p>Which two statements are true regarding FortiGate HA configuration synchronization? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="haSync" value="A" id="optionA_3">
+      <label for="optionA_3">A. Checksums of devices are compared against each other to ensure configurations are the same.</label><br>
+
+      <input type="checkbox" name="haSync" value="B" id="optionB_3">
+      <label for="optionB_3">B. Incremental configuration synchronization can occur only from changes made on the primary FortiGate device.</label><br>
+
+      <input type="checkbox" name="haSync" value="C" id="optionC_3">
+      <label for="optionC_3">C. Incremental configuration synchronization can occur from changes made on any FortiGate device within the HA cluster.</label><br>
+
+      <input type="checkbox" name="haSync" value="D" id="optionD_3">
+      <label for="optionD_3">D. Checksums of devices will be different from each other because some configuration items are not synced to other HA members.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question3">Solution</button>
+
+  <div id="solutionInfo_question3" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>Checksum must be equal on both FortiGate. Incremental Configuration Synchronization happens when the primary configuration is changed and changes are synchronized to the secondary. Secondary configuration is changed and changes are synchronized to the primary. AC: FortiGate 7.4 Administrator Study Guide pg.421 "After the initial synchronization is complete, whenever a change is made to the configuration of an HA cluster device (primary or secondary), incremental synchronization sends the same configuration change to all other cluster devices over the HA heartbeat link"</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-Procedure-for-HA-manual-synchronization/ta-p/196067" target="_blank">Fortinet Community - Procedure for HA manual synchronization</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/fortigate-6000-administration-guide/352304/configuration-synchronization" target="_blank">Fortinet Documentation - Configuration Synchronization</a></li>
+    </ul>
+
+    <p id="correctAnswers_question3" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. Checksums of devices are compared against each other to ensure configurations are the same.<br>
+      C. Incremental configuration synchronization can occur from changes made on any FortiGate device within the HA cluster.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer3.js"></script>

@@ -1,0 +1,43 @@
+<div>
+  <h2>Question 7</h2>
+  <p>Refer to the exhibit showing a FortiGuard connection debug output.</p>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q2/img/q7.png" alt="FortiGuard Connection Debug Output" style="max-width: 100%; height: auto;">
+
+  <p>Based on the output, which two facts does the administrator know about the FortiGuard connection? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="fortiGuardFacts" value="A" id="optionA_7">
+      <label for="optionA_7">A. One server was contacted to retrieve the contract information.</label><br>
+
+      <input type="checkbox" name="fortiGuardFacts" value="B" id="optionB_7">
+      <label for="optionB_7">B. There is at least one server that lost packets consecutively.</label><br>
+
+      <input type="checkbox" name="fortiGuardFacts" value="C" id="optionC_7">
+      <label for="optionC_7">C. A local FortiManager is one of the servers FortiGate communicates with.</label><br>
+
+      <input type="checkbox" name="fortiGuardFacts" value="D" id="optionD_7">
+      <label for="optionD_7">D. FortiGate is using default FortiGuard communication settings.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question7">Solution</button>
+
+  <div id="solutionInfo_question7" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>A is correct because in the output we can see num. of servers: 1, which refers to the servers used to retrieve contract info. D is also correct because the output indicates that the protocol used is HTTPS on standard port 443 and anycast is enabled.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Resolving-FDS-Communication-Issues/ta-p/189511" target="_blank">Fortinet Community - Resolving FDS Communication Issues</a></li>
+    </ul>
+
+    <p id="correctAnswers_question7" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. One server was contacted to retrieve the contract information.<br>
+      D. FortiGate is using default FortiGuard communication settings.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer7.js"></script>
