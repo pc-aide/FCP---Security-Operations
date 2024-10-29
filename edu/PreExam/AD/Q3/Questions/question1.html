@@ -1,0 +1,50 @@
+<div>
+  <h2>Question 1</h2>
+  <p>Which three methods are used by the collector agent for AD polling? (Choose three.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="adPolling" value="A" id="optionA_1">
+      <label for="optionA_1">A. WinSecLog</label><br>
+
+      <input type="checkbox" name="adPolling" value="B" id="optionB_1">
+      <label for="optionB_1">B. WMI</label><br>
+
+      <input type="checkbox" name="adPolling" value="C" id="optionC_1">
+      <label for="optionC_1">C. NetAPI</label><br>
+
+      <input type="checkbox" name="adPolling" value="D" id="optionD_1">
+      <label for="optionD_1">D. FSSO REST API</label><br>
+
+      <input type="checkbox" name="adPolling" value="E" id="optionE_1">
+      <label for="optionE_1">E. FortiGate polling</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question1">Solution</button>
+
+  <div id="solutionInfo_question1" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>A, B, and C are correct. Fortigate 7.4 Administrator Study Guide page 130 explains:</p>
+    <ul>
+      <li><strong>WinSecLog:</strong> This method involves reading the Windows Security Event Log to gather information about user logins and logouts.</li>
+      <li><strong>WMI (Windows Management Instrumentation):</strong> This method allows the collector agent to query the AD for user login information using WMI queries.</li>
+      <li><strong>NetAPI:</strong> This method uses the Windows Network API to retrieve user login information from the AD.</li>
+    </ul>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-FSSO-Agent-in-polling-mode/ta-p/228136" target="_blank">Fortinet Community - Technical Tip: FSSO Agent in polling mode</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/mngeti/fsso_dc_agent_vs_collection_polling/" target="_blank">Reddit - FSSO DC Agent vs Collection Polling</a></li>
+    </ul>
+
+    <p id="correctAnswers_question1" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. WinSecLog<br>
+      B. WMI<br>
+      C. NetAPI
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer1.js"></script>

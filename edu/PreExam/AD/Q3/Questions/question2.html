@@ -1,0 +1,41 @@
+<div>
+  <h2>Question 2</h2>
+  <p>Which two statements about equal-cost multi-path (ECMP) configuration on FortiGate are true? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="ecmpConfig" value="A" id="optionA_2">
+      <label for="optionA_2">A. If SD-WAN is enabled, you control the load balancing algorithm with the parameter load-balance-mode.</label><br>
+
+      <input type="checkbox" name="ecmpConfig" value="B" id="optionB_2">
+      <label for="optionB_2">B. If SD-WAN is disabled, you can configure the parameter v4-ecmp-mode to volume-based.</label><br>
+
+      <input type="checkbox" name="ecmpConfig" value="C" id="optionC_2">
+      <label for="optionC_2">C. If SD-WAN is enabled, you can configure routes with unequal distance and priority values to be part of ECMP.</label><br>
+
+      <input type="checkbox" name="ecmpConfig" value="D" id="optionD_2">
+      <label for="optionD_2">D. If SD-WAN is disabled, you configure the load balancing algorithm in config system settings.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question2">Solution</button>
+
+  <div id="solutionInfo_question2" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>A and D are correct. Page 90 states that when SD-WAN is enabled, the v4-ecmp-mode parameter is hidden, and you control the ECMP algorithm with the load-balance-mode setting. When SD-WAN is disabled, the ECMP algorithm is configured via the CLI under <code>config system settings</code>.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/176031a/clarification_regarding_ecmpmaxpath_value_and_how/" target="_blank">Reddit - Clarification regarding ecmpmaxpath value</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/25967/equal-cost-multi-path" target="_blank">Fortinet Documentation - Equal Cost Multi-Path</a></li>
+    </ul>
+
+    <p id="correctAnswers_question2" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. If SD-WAN is enabled, you control the load balancing algorithm with the parameter load-balance-mode.<br>
+      D. If SD-WAN is disabled, you configure the load balancing algorithm in config system settings.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer2.js"></script>

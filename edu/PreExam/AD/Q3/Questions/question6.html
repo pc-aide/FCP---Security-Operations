@@ -1,0 +1,48 @@
+<div>
+  <h2>Question 6</h2>
+  <p>Refer to the exhibits.</p>
+
+  <!-- Images exhibit -->
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q6.png" alt="Exhibit 1" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q6_2.png" alt="Exhibit 2" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q6_3.png" alt="Exhibit 3" style="max-width: 100%; height: auto;">
+
+  <p>FGT-1 and FGT-2 are updated with HA configuration commands shown in the exhibit. What would be the expected outcome in the HA cluster?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="haOutcome" value="A" id="optionA_6">
+      <label for="optionA_6">A. FGT-1 will remain the primary because FGT-2 has lower priority.</label><br>
+
+      <input type="radio" name="haOutcome" value="B" id="optionB_6">
+      <label for="optionB_6">B. FGT-2 will take over as the primary because it has the override enable setting and higher priority than FGT-1.</label><br>
+
+      <input type="radio" name="haOutcome" value="C" id="optionC_6">
+      <label for="optionC_6">C. FGT-1 will synchronize the override disable setting with FGT-2.</label><br>
+
+      <input type="radio" name="haOutcome" value="D" id="optionD_6">
+      <label for="optionD_6">D. The HA cluster will become out of sync because the override setting must match on all HA members.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question6">Solution</button>
+
+  <div id="solutionInfo_question6" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q6_4.png">
+    <p>B is correct. According to page 415 of the Study Guide, FGT-2 will take over as the primary because it has the override enable setting and higher priority than FGT-1.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/900885/ha-active-passive-cluster-setup" target="_blank">Fortinet Documentation - HA Active-Passive Cluster Setup</a></li>
+      <li><a href="https://video.fortinet.com/latest/setup-high-availability-ha-cluster" target="_blank">Fortinet Video - Setup High Availability (HA) Cluster</a></li>
+    </ul>
+
+    <p id="correctAnswers_question6" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      B. FGT-2 will take over as the primary because it has the override enable setting and higher priority than FGT-1.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer6.js"></script>

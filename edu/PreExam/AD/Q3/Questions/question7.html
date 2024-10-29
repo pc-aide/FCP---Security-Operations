@@ -1,0 +1,50 @@
+<div>
+  <h2>Question 7</h2>
+  <p>Refer to the exhibits.</p>
+
+  <!-- Images exhibit -->
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q7.png" alt="Exhibit 1" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q7_2.png" alt="Exhibit 2" style="max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q7_3.png" alt="Exhibit 3" style="max-width: 100%; height: auto;">
+
+  <p>The exhibits show a diagram of a FortiGate device connected to the network, and the firewall configuration. An administrator created a Deny policy with default settings to deny Webserver access for Remote-User2. The policy should work such that Remote-User1 must be able to access the Webserver while preventing Remote-User2 from accessing the Webserver. Which two configuration changes can the administrator make to the policy to deny Webserver access for Remote-User2? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="denyAccess" value="A" id="optionA_7">
+      <label for="optionA_7">A. Enable match-vip in the Deny policy.</label><br>
+
+      <input type="checkbox" name="denyAccess" value="B" id="optionB_7">
+      <label for="optionB_7">B. Set the Destination address as Webserver in the Deny policy.</label><br>
+
+      <input type="checkbox" name="denyAccess" value="C" id="optionC_7">
+      <label for="optionC_7">C. Disable match-vip in the Deny policy.</label><br>
+
+      <input type="checkbox" name="denyAccess" value="D" id="optionD_7">
+      <label for="optionD_7">D. Set the Destination address as Deny_IP in the Allow_access policy.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question7">Solution</button>
+
+  <div id="solutionInfo_question7" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>A and B are correct. According to page 64 of the Study Guide 7.4, enabling match-vip in the Deny policy and setting the Destination address as Webserver in the Deny policy will help to deny Webserver access for Remote-User2. However, match-vip is enabled by default after FortiOS 7.2.3, making A a bit confusing in the context of FortiOS 7.4 questions.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortiportal/7.4.1/user-guide/545875/configuring-a-virtual-ip" target="_blank">Fortinet Documentation - Configuring a Virtual IP</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/12bb77a0-7c1d-11ef-899d-368457bb1542/FortiPortal-7.4.1-User_Guide.pdf" target="_blank">Fortinet User Guide - FortiPortal 7.4.1</a></li>
+      <li><a href="https://community.spiceworks.com/t/accessing-internal-server-through-fortigate/960201" target="_blank">Spiceworks Community - Accessing Internal Server Through FortiGate</a></li>
+      <li><a href="https://blog.boll.ch/crucial-information-for-fortigate-users-transition-to-fortios-7-4-4-and-the-discontinuation-of-proxy-based-features-on-devices-with-2gb-of-ram-or-less/" target="_blank">Blog - Crucial Information for FortiGate Users</a></li>
+    </ul>
+
+    <p id="correctAnswers_question7" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. Enable match-vip in the Deny policy.<br>
+      B. Set the Destination address as Webserver in the Deny policy.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer7.js"></script>

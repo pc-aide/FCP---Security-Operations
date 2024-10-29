@@ -1,0 +1,43 @@
+<div>
+  <h2>Question 5</h2>
+  <p>Refer to the exhibits, which show the firewall policy and an antivirus profile configuration.<br/>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q5.png"><Br/>
+    Why is the user unable to receive a block replacement message when downloading an infected file for the first time?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="blockMessage" value="A" id="optionA_5">
+      <label for="optionA_5">A. The intrusion prevention security profile must be enabled when using flow-based inspection mode.</label><br>
+
+      <input type="radio" name="blockMessage" value="B" id="optionB_5">
+      <label for="optionB_5">B. The option to send files to FortiSandbox for inspection is enabled.</label><br>
+
+      <input type="radio" name="blockMessage" value="C" id="optionC_5">
+      <label for="optionC_5">C. The firewall policy performs a full content inspection on the file.</label><br>
+
+      <input type="radio" name="blockMessage" value="D" id="optionD_5">
+      <label for="optionD_5">D. Flow-based inspection is used, which resets the last packet to the user.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question5">Solution</button>
+
+  <div id="solutionInfo_question5" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q5_2.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q5_3.png">
+    <p>D is correct. According to the FortiGate 7.4 Administrator Self-Paced Guide, page 200, in flow-based scanning, if a virus is detected, the final packet is dropped, making the file unusable to the end user. FortiGate caches the URL of the file, and if the user attempts to download again, rather than scanning the file again, the IPS engine sends a block message to the user.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/5.4.0/cookbook/350705/inspecting-traffic-content-using-flow-based-inspection" target="_blank">Fortinet Documentation - Inspecting Traffic Content Using Flow-Based Inspection</a></li>
+    </ul>
+
+    <p id="correctAnswers_question5" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      D. Flow-based inspection is used, which resets the last packet to the user.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer5.js"></script>
