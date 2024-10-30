@@ -1,0 +1,46 @@
+<div>
+  <h2>Question 17</h2>
+  <p>Which two statements are correct when FortiGate enters conserve mode? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="conserveMode" value="A" id="optionA_17">
+      <label for="optionA_17">A. FortiGate halts complete system operation and requires a reboot to regain available resources</label><br>
+
+      <input type="checkbox" name="conserveMode" value="B" id="optionB_17">
+      <label for="optionB_17">B. FortiGate refuses to accept configuration changes</label><br>
+
+      <input type="checkbox" name="conserveMode" value="C" id="optionC_17">
+      <label for="optionC_17">C. FortiGate continues to run critical security actions, such as quarantine</label><br>
+
+      <input type="checkbox" name="conserveMode" value="D" id="optionD_17">
+      <label for="optionD_17">D. FortiGate continues to transmit packets without IPS inspection when the fail-open global setting in IPS is enabled</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question17">Solution</button>
+
+  <div id="solutionInfo_question17" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q17.webp">
+    <p>According to the FortiGate 7.4 Study Guide (p. 460), FortiGate does not accept configuration changes in conserve mode, as it may increase memory usage further. It explicitly does NOT run any quarantine actions. You can configure IPS fail-open to control IPS behavior when the IPS socket buffer is full.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://bluecatnetworks.com/fortinet/top-5-automation-for-fortigate-firewalls/" target="_blank">Top 5 Automation for FortiGate Firewalls</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/194558/conserve-mode" target="_blank">Fortinet Conserve Mode Guide</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/f10cede7-228d-11ef-8c42-fa163e15d75b/FortiOS-7.6.0-Administration_Guide.pdf" target="_blank">FortiOS 7.6.0 Administration Guide</a></li>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-conserve-mode-is-triggered/ta-p/198580" target="_blank">Technical Tip: How Conserve Mode is Triggered</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/15cbyxf/conserve_mode/" target="_blank">Reddit Discussion on Conserve Mode</a></li>
+      <li><a href="https://www.hifence.com/blog/fortigate-conserve-mode-how-to-stop-it-and-what-it-means/" target="_blank">HiFence Blog on Conserve Mode</a></li>
+    </ul>
+
+    <p id="correctAnswer_question17" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      B. FortiGate refuses to accept configuration changes<br>
+      D. FortiGate continues to transmit packets without IPS inspection when the fail-open global setting in IPS is enabled
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer17.js"></script>

@@ -1,0 +1,48 @@
+<div>
+  <h2>Question 10</h2>
+  <p>Which engine handles application control traffic on the next-generation firewall (NGFW) FortiGate?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="appControlEngine" value="A" id="optionA_10">
+      <label for="optionA_10">A. Internet Service Database (ISDB) engine</label><br>
+
+      <input type="radio" name="appControlEngine" value="B" id="optionB_10">
+      <label for="optionB_10">B. Intrusion prevention system engine</label><br>
+
+      <input type="radio" name="appControlEngine" value="C" id="optionC_10">
+      <label for="optionC_10">C. Antivirus engine</label><br>
+
+      <input type="radio" name="appControlEngine" value="D" id="optionD_10">
+      <label for="optionD_10">D. Application control engine</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question10">Solution</button>
+
+  <div id="solutionInfo_question10" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q10.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q10_2.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q10_3.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q10_4.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q10_5.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q10_6.png">
+    <p>Unlike other forms of security profiles, such as web filtering or antivirus, application control is not applied by a proxy. It uses an IPS engine to analyze network traffic and detect application traffic, even if the application is using standard or non-standard protocols and ports. It doesn’t operate using built-in protocol states. It matches patterns in the entire byte stream of the packet, and then looks for patterns.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/565562/intrusion-prevention" target="_blank">Fortinet Documentation - Intrusion Prevention</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/f10cede7-228d-11ef-8c42-fa163e15d75b/FortiOS-7.6.0-Administration_Guide.pdf" target="_blank">Fortinet Documentation - FortiOS 7.6.0 Administration Guide</a></li>
+      <li><a href="https://www.wwt.com/article/fortinet-security-ips" target="_blank">World Wide Technology - Fortinet Security IPS</a></li>
+      <li><a href="https://www.fortinetguru.com/2018/09/fortios-6-intrusion-prevention/" target="_blank">Fortinet Guru - FortiOS 6 Intrusion Prevention</a></li>
+    </ul>
+
+    <p id="correctAnswers_question10" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      B. Intrusion prevention system engine
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer10.js"></script>

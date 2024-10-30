@@ -1,0 +1,53 @@
+<div>
+  <h2>Question 11</h2>
+  <p>A FortiGate administrator is required to reduce the attack surface on the SSL VPN portal.<br>
+  Which SSL timer can you use to mitigate a denial of service (DoS) attack?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="sslVpnTimer" value="A" id="optionA_11">
+      <label for="optionA_11">A. SSL VPN dtls-hello-timeout</label><br>
+
+      <input type="radio" name="sslVpnTimer" value="B" id="optionB_11">
+      <label for="optionB_11">B. SSL VPN http-request-header-timeout</label><br>
+
+      <input type="radio" name="sslVpnTimer" value="C" id="optionC_11">
+      <label for="optionC_11">C. SSL VPN login-timeout</label><br>
+
+      <input type="radio" name="sslVpnTimer" value="D" id="optionD_11">
+      <label for="optionD_11">D. SSL VPN idle-timeout</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question11">Solution</button>
+
+  <div id="solutionInfo_question11" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q11.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q11_2.png">
+    <p>SSL VPN http-request-header-timeout is a timer that controls how long FortiGate will wait to receive the complete HTTP request header from a client before timing out. Setting this timeout can help mitigate certain types of DoS attacks by limiting how long incomplete or maliciously delayed requests can tie up resources on the SSL VPN portal.</p>
+    
+    <p><strong>Details on Other Options:</strong></p>
+    <ul>
+      <li><strong>A. SSL VPN dtls-hello-timeout:</strong> Controls the timeout for the DTLS handshake but does not directly affect DoS resilience like http-request-header-timeout.</li>
+      <li><strong>C. SSL VPN login-timeout:</strong> Sets the maximum time for a user to complete login but does not specifically mitigate slow or incomplete DoS attacks.</li>
+      <li><strong>D. SSL VPN idle-timeout:</strong> Controls session activity but is less effective for DoS attack prevention focused on delayed requests.</li>
+    </ul>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-Configure-Denial-of-Service-DoS-protection-with/ta-p/262574" target="_blank">Fortinet Community - Configure Denial of Service Protection</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/771644/dos-protection" target="_blank">Fortinet Documentation - DoS Protection</a></li>
+      <li><a href="https://pressbooks.bccampus.ca/fortigatefirewall/chapter/ddos-prevention/" target="_blank">Pressbooks - FortiGate Firewall DoS Prevention</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/10dkq5l/hi_everyone_i_have_a_question_ips_feature_in/" target="_blank">Reddit - Discussion on IPS and DoS Protection</a></li>
+      <li><a href="https://www.fortinetguru.com/2017/12/fortios-dos-and-ddos-protection/" target="_blank">Fortinet Guru - DoS and DDoS Protection</a></li>
+    </ul>
+
+    <p id="correctAnswers_question11" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      B. SSL VPN http-request-header-timeout
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer11.js"></script>

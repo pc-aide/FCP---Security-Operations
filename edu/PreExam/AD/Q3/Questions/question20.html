@@ -1,0 +1,50 @@
+<div>
+  <h2>Question 20</h2>
+  <p>Refer to the exhibits, which show a diagram of a FortiGate device connected to the network. VIP object configuration, and the firewall policy configuration.</p>
+  <p><img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q20.png" alt="FortiGate Diagram 1" width="600"></p>
+  <p><img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q20_2.png" alt="FortiGate Diagram 2" width="600"></p>
+  <p><img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q20_3.png" alt="FortiGate Diagram 3" width="600"></p>
+  
+  <p>If the host 10.200.3.1 sends a TCP SYN packet on port 8080 to 10.200.1.10, what will the source address, destination address, and destination port of the packet be at the time FortiGate forwards the packet to the destination?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="packetDetails" value="A" id="optionA_20">
+      <label for="optionA_20">A. 10.0.1.254, 10.200.1.10, and 8080, respectively</label><br>
+
+      <input type="radio" name="packetDetails" value="B" id="optionB_20">
+      <label for="optionB_20">B. 10.0.1.254, 10.0.1.10, and 80, respectively</label><br>
+
+      <input type="radio" name="packetDetails" value="C" id="optionC_20">
+      <label for="optionC_20">C. 10.200.3.1, 10.0.1.10, and 80, respectively</label><br>
+
+      <input type="radio" name="packetDetails" value="D" id="optionD_20">
+      <label for="optionD_20">D. 10.200.3.1, 10.0.1.10, and 8080, respectively</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question20">Solution</button>
+
+  <div id="solutionInfo_question20" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q20_4.png">
+    <p>Source Address: The source address remains as 10.200.3.1. This is the original IP address of the host sending the packet.</p>
+    <p>Destination Address: The VIP (Virtual IP) configuration on the FortiGate maps the external IP 10.200.1.10 to the internal IP 10.0.1.10. So, when FortiGate forwards the packet, the destination address will be translated to 10.0.1.10.</p>
+    <p>Destination Port: The VIP configuration includes port forwarding, where external port 8080 is mapped to internal port 80. Therefore, the destination port will be translated to 80.</p>
+
+    <p>So, when FortiGate forwards the packet to the destination, the packet's source address, destination address, and destination port will be 10.200.3.1, 10.0.1.10, and 80 respectively.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.4.0/parallel-path-processing-life-of-a-packet/86811/packet-flow-ingress-and-egress-fortigates-without-network-processor-offloading" target="_blank">Fortinet Packet Flow</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/e63315cc-67d1-11ea-9384-00505692583a/FortiOS-6.4.0-Parallel_Path_Processing.pdf" target="_blank">FortiOS Parallel Path Processing</a></li>
+    </ul>
+
+    <p id="correctAnswers_question20" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      C. 10.200.3.1, 10.0.1.10, and 80, respectively
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer20.js"></script>

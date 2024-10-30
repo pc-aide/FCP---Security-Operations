@@ -1,0 +1,54 @@
+<div>
+  <h2>Question 13</h2>
+  <p>Refer to exhibit.<br>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q13.png">
+  An administrator configured the web filtering profile shown in the exhibit to block access to all social networking sites except Twitter. However, when users try to access twitter.com, they are redirected to a FortiGuard web filtering block page.<br>
+  Based on the exhibit, which configuration change can the administrator make to allow Twitter while blocking all other social networking sites?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="webFilterChange" value="A" id="optionA_13">
+      <label for="optionA_13">A. On the Static URL Filter configuration set Type to Simple</label><br>
+
+      <input type="radio" name="webFilterChange" value="B" id="optionB_13">
+      <label for="optionB_13">B. On the FortiGuard Category Based Filter configuration set Action to Warning for Social Networking</label><br>
+
+      <input type="radio" name="webFilterChange" value="C" id="optionC_13">
+      <label for="optionC_13">C. On the Static URL Filter configuration set Action to Monitor</label><br>
+
+      <input type="radio" name="webFilterChange" value="D" id="optionD_13">
+      <label for="optionD_13">D. On the Static URL Filter configuration set Action to Exempt</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question13">Solution</button>
+
+  <div id="solutionInfo_question13" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q13_2.png">
+    <p>To allow access to Twitter while blocking all other social networking sites, the administrator should set the action for Twitter in the Static URL Filter to Exempt. This configuration ensures that requests to twitter.com are not blocked, allowing users to access the site without redirection to the FortiGuard web filtering block page.</p>
+    
+    <p><strong>Details on Other Options:</strong></p>
+    <ul>
+      <li><strong>A. On the Static URL Filter configuration set Type to Simple:</strong> Changing the type to Simple does not directly impact the blocking or allowing of specific sites.</li>
+      <li><strong>B. On the FortiGuard Category Based Filter configuration set Action to Warning for Social Networking:</strong> Setting the action to Warning would still block access, but only notify users instead of providing full access to Twitter.</li>
+      <li><strong>C. On the Static URL Filter configuration set Action to Monitor:</strong> This would only log access attempts but not allow them, still leading to a block page for Twitter.</li>
+    </ul>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/615462/url-filter#:~:text=To%20create%20URL%20filter%20in,the%20New%20URL%20Filter%20pane.&text=FortiGate%20tries%20to%20strictly%20match%20the%20full%20context." target="_blank">Fortinet Documentation - URL Filtering</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/30be976a-bbb3-11ee-8673-fa163e15d75b/FortiOS-6.2.16-Cookbook.pdf" target="_blank">Fortinet Documentation - FortiOS Cookbook</a></li>
+      <li><a href="https://www.fortinetguru.com/2018/09/fortios-6-web-filtering/13/" target="_blank">FortinetGuru - FortiOS 6 Web Filtering</a></li>
+      <li><a href="https://gist.github.com/githubfoam/2a6c2ff446a97e46a55a72f7e01893ef" target="_blank">GitHub - Fortinet Web Filtering Gist</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/kpd7hr/fortinet_web_filtering/" target="_blank">Reddit Discussion on Fortinet Web Filtering</a></li>
+    </ul>
+
+    <p id="correctAnswers_question13" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      D. On the Static URL Filter configuration set Action to Exempt
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer13.js"></script>

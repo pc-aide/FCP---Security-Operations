@@ -1,0 +1,46 @@
+<div>
+  <h2>Question 15</h2>
+  <p>Which three CLI commands can you use to troubleshoot Layer 3 issues, if the issue is in neither the physical layer nor the link layer? (Choose three.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="cliCommands" value="A" id="optionA_15">
+      <label for="optionA_15">A. execute ping</label><br>
+
+      <input type="checkbox" name="cliCommands" value="B" id="optionB_15">
+      <label for="optionB_15">B. execute traceroute</label><br>
+
+      <input type="checkbox" name="cliCommands" value="C" id="optionC_15">
+      <label for="optionC_15">C. diagnose sys top</label><br>
+
+      <input type="checkbox" name="cliCommands" value="D" id="optionD_15">
+      <label for="optionD_15">D. get system arp</label><br>
+
+      <input type="checkbox" name="cliCommands" value="E" id="optionE_15">
+      <label for="optionE_15">E. diagnose sniffer packet any</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question15">Solution</button>
+
+  <div id="solutionInfo_question15" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>ABE makes sense but I have a suspicion they are looking for ARP as an answer here because the study guide talks about using D as a way to look for IP address conflicts. All layer 3. ARP is layer 2, therefore D is incorrect.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-First-steps-to-troubleshoot-connectivity/ta-p/192560" target="_blank">Fortinet Troubleshooting Tip</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/w18u5f/l3_switch_traffic_not_traversing_fortigate/" target="_blank">Reddit - L3 switch traffic not traversing FortiGate</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/5f000f73-5419-11ee-8e6d-fa163e15d75b/FortiOS-7.4-Troubleshooting_Cheat_Sheet.pdf" target="_blank">Fortinet Troubleshooting Cheat Sheet</a></li>
+    </ul>
+
+    <p id="correctAnswers_question15" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. execute ping<br>
+      B. execute traceroute<br>
+      D. get system arp
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer15.js"></script>

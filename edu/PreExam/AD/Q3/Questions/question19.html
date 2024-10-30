@@ -1,0 +1,53 @@
+<div>
+  <h2>Question 19</h2>
+  <p>What are three key routing principles in SD-WAN? (Choose three.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="sdwanRouting" value="A" id="optionA_19">
+      <label for="optionA_19">A. By default, SD-WAN members are skipped if they do not have a valid route to the destination</label><br>
+
+      <input type="checkbox" name="sdwanRouting" value="B" id="optionB_19">
+      <label for="optionB_19">B. By default, SD-WAN rules are skipped if only one route to the destination is available</label><br>
+
+      <input type="checkbox" name="sdwanRouting" value="C" id="optionC_19">
+      <label for="optionC_19">C. By default, SD-WAN rules are skipped if the best route to the destination is not an SD-WAN member</label><br>
+
+      <input type="checkbox" name="sdwanRouting" value="D" id="optionD_19">
+      <label for="optionD_19">D. SD-WAN rules have precedence over any other type of routes</label><br>
+
+      <input type="checkbox" name="sdwanRouting" value="E" id="optionE_19">
+      <label for="optionE_19">E. Regular policy routes have precedence over SD-WAN rules</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question19">Solution</button>
+
+  <div id="solutionInfo_question19" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q19.png">
+    <p>FGT 7.4 ASG documentation provides these principles:</p>
+    <ul>
+      <li>A. SD-WAN members are only used if they have a valid route to the destination, ensuring effective path selection.</li>
+      <li>C. If the best route to a destination does not belong to an SD-WAN member, SD-WAN rules are skipped, which aligns with SD-WAN's primary purpose of using its own members.</li>
+      <li>E. Regular policy routes have precedence over SD-WAN rules.</li>
+    </ul>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.0.0/sd-wan-sd-branch-architecture-for-mssps/768108/sd-wan-routing-logic" target="_blank">Fortinet SD-WAN Routing Logic - FortiOS 7.0.0</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/b5abead0-e74d-11ec-bb32-fa163e15d75b/secure-sdwan-7.0-arch-for-mssp.pdf" target="_blank">Fortinet Secure SD-WAN Architecture for MSSP</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/257828/sd-wan-components-and-design-principles" target="_blank">Fortinet SD-WAN Components and Design Principles - FortiOS 7.6.0</a></li>
+      <li><a href="https://docs.sophos.com/nsg/sophos-firewall/18.5/Help/en-us/webhelp/onlinehelp/AdministratorHelp/Routing/SDWANPolicyRouting/index.html#route-precedence" target="_blank">Sophos - SD-WAN Policy Routing</a></li>
+    </ul>
+
+    <p id="correctAnswers_question19" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. By default, SD-WAN members are skipped if they do not have a valid route to the destination<br>
+      C. By default, SD-WAN rules are skipped if the best route to the destination is not an SD-WAN member<br>
+      E. Regular policy routes have precedence over SD-WAN rules
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer19.js"></script>

@@ -1,0 +1,43 @@
+<div>
+  <h2>Question 16</h2>
+  <p>An administrator wants to configure dead peer detection (DPD) on IPsec VPN for detecting dead tunnels. The requirement is that FortiGate sends DPD probes only when there is outbound traffic but no response from the peer.</p>
+  <p>Which DPD mode on FortiGate meets this requirement?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="dpdMode" value="A" id="optionA_16">
+      <label for="optionA_16">A. On Demand</label><br>
+
+      <input type="radio" name="dpdMode" value="B" id="optionB_16">
+      <label for="optionB_16">B. On Idle</label><br>
+
+      <input type="radio" name="dpdMode" value="C" id="optionC_16">
+      <label for="optionC_16">C. Disabled</label><br>
+
+      <input type="radio" name="dpdMode" value="D" id="optionD_16">
+      <label for="optionD_16">D. Enabled</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question16">Solution</button>
+
+  <div id="solutionInfo_question16" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q16.png">
+    <p>On Demand = Probing when there's outbound traffic but no response.<br>
+    On Idle = Probing when there's no interesting traffic at all. In FortiGate, On Demand mode for Dead Peer Detection (DPD) sends DPD probes only when there is outbound traffic but no response from the peer. This mode is efficient for detecting dead tunnels without constantly probing, as it only initiates probes when necessary, meeting the specified requirement.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiClient/Technical-Tip-Configuring-DPD-dead-peer-detection-on-IPsec-VPN/ta-p/192616" target="_blank">Technical Tip: Configuring DPD on IPsec VPN</a></li>
+      <li><a href="https://www.fortinetguru.com/2016/10/fortigate-ipsec-phase-1-parameters/" target="_blank">FortiGate IPsec Phase 1 Parameters</a></li>
+    </ul>
+
+    <p id="correctAnswer_question16" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. On Demand
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer16.js"></script>

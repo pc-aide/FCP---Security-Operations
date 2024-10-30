@@ -1,0 +1,43 @@
+<div>
+  <h2>Question 8</h2>
+  <p>Which two statements explain antivirus scanning modes? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="antivirusMode" value="A" id="optionA_8">
+      <label for="optionA_8">A. In flow-based inspection mode, FortiGate buffers the file, but also simultaneously transmits it to the client.</label><br>
+
+      <input type="checkbox" name="antivirusMode" value="B" id="optionB_8">
+      <label for="optionB_8">B. In flow-based inspection mode files bigger than the buffer size are scanned.</label><br>
+
+      <input type="checkbox" name="antivirusMode" value="C" id="optionC_8">
+      <label for="optionC_8">C. In proxy-based inspection mode files bigger than the buffer size are scanned.</label><br>
+
+      <input type="checkbox" name="antivirusMode" value="D" id="optionD_8">
+      <label for="optionD_8">D. In proxy-based inspection mode antivirus scanning buffers the whole file for scanning, before sending it to the client.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question8">Solution</button>
+
+  <div id="solutionInfo_question8" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>Flow-based inspection mode (A): FortiGate performs antivirus scanning while simultaneously forwarding data to the client, resulting in lower latency. The file is buffered as it’s scanned, allowing transmission to continue, unless a threat is detected.</p>
+    <p>Proxy-based inspection mode (D): This mode buffers the entire file before forwarding, which provides a deeper scan but may introduce higher latency. If the file is clean, it is then sent to the client.<br/><br/> Option B and C are incorrect because, in both modes, files larger than the buffer limit might not be fully scanned if they exceed buffer limitations.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/100953/inspection-mode-differences-for-antivirus" target="_blank">Fortinet Documentation - Inspection Mode Differences for Antivirus</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/30be976a-bbb3-11ee-8673-fa163e15d75b/FortiOS-6.2.16-Cookbook.pdf" target="_blank">Fortinet Documentation - FortiOS 6.2.16 Cookbook</a></li>
+      <li><a href="https://www.fortinetguru.com/2016/11/enabling-antivirus-scanning/" target="_blank">Fortinet Guru - Enabling Antivirus Scanning</a></li>
+    </ul>
+
+    <p id="correctAnswers_question8" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. In flow-based inspection mode, FortiGate buffers the file, but also simultaneously transmits it to the client.<br>
+      D. In proxy-based inspection mode antivirus scanning buffers the whole file for scanning, before sending it to the client.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer8.js"></script>

@@ -1,0 +1,49 @@
+<div>
+  <h2>Question 12</h2>
+  <p>A FortiGate firewall policy is configured with active authentication; however, the user cannot authenticate when accessing a website.<br>
+  Which protocol must FortiGate allow even though the user cannot authenticate?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="authProtocol" value="A" id="optionA_12">
+      <label for="optionA_12">A. ICMP</label><br>
+
+      <input type="radio" name="authProtocol" value="B" id="optionB_12">
+      <label for="optionB_12">B. DNS</label><br>
+
+      <input type="radio" name="authProtocol" value="C" id="optionC_12">
+      <label for="optionC_12">C. DHCP</label><br>
+
+      <input type="radio" name="authProtocol" value="D" id="optionD_12">
+      <label for="optionD_12">D. LDAP</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question12">Solution</button>
+
+  <div id="solutionInfo_question12" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>When a user attempts to authenticate through active authentication, DNS resolution is essential for accessing websites, as it translates domain names into IP addresses. Even if the user has not yet authenticated, DNS traffic must be allowed for the user to reach the login page and initiate the authentication process.</p>
+    
+    <p><strong>Details on Other Options:</strong></p>
+    <ul>
+      <li><strong>A. ICMP:</strong> ICMP is not required for web browsing or authentication and is primarily used for network diagnostics (e.g., ping).</li>
+      <li><strong>C. DHCP:</strong> DHCP assigns IP addresses but is not directly involved in the authentication or web access process.</li>
+      <li><strong>D. LDAP:</strong> LDAP may be used to retrieve user credentials for authentication, but it’s not necessary for web traffic itself.</li>
+    </ul>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/622284/user-authentication" target="_blank">Fortinet Documentation - User Authentication</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/f10cede7-228d-11ef-8c42-fa163e15d75b/FortiOS-7.6.0-Administration_Guide.pdf" target="_blank">Fortinet Documentation - FortiOS Administration Guide</a></li>
+      <li><a href="https://docs.cyberark.com/identity-administration/latest/en/content/coreservices/authenticate/radius-fortinet.htm?TocPath=Administrator%7CConfigure%20MFA%7CMFA%20for%20VPNs%20and%20VDIs%7C_____6" target="_blank">CyberArk Documentation - Fortinet MFA Integration</a></li>
+    </ul>
+
+    <p id="correctAnswers_question12" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      B. DNS
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer12.js"></script>

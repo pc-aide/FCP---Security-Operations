@@ -1,0 +1,48 @@
+<div>
+  <h2>Question 14</h2>
+  <p>There are multiple dial-up IPsec VPNs configured in aggressive mode on the HQ FortiGate. The requirement is to connect dial-up users to their respective department VPN tunnels.</p>
+  <p>Which phase 1 setting you can configure to match the user to the tunnel?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="vpnSetting" value="A" id="optionA_14">
+      <label for="optionA_14">A. Peer ID</label><br>
+
+      <input type="radio" name="vpnSetting" value="B" id="optionB_14">
+      <label for="optionB_14">B. Local Gateway</label><br>
+
+      <input type="radio" name="vpnSetting" value="C" id="optionC_14">
+      <label for="optionC_14">C. Dead Peer Detection</label><br>
+
+      <input type="radio" name="vpnSetting" value="D" id="optionD_14">
+      <label for="optionD_14">D. IKE Mode Config</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question14">Solution</button>
+
+  <div id="solutionInfo_question14" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q14.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q14.gif">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q14_2.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q14_3.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q14_4.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q3/img/q14_5.png">
+    <p>In FortiGate IPsec VPN configurations, particularly in aggressive mode, the Peer ID can be used to match incoming connections to a specific VPN tunnel based on the identity of the connecting user. This allows the FortiGate to differentiate between users from different departments and assign them to their respective VPN tunnels.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-use-Peer-IDs-to-select-an-IPSec-dialup/ta-p/192292" target="_blank">Fortinet Technical Tip - How to use Peer IDs</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/260681/peers-and-authentication-groups" target="_blank">Fortinet Documentation - Peers and Authentication Groups</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/ue2hx9/branch_office_fgs_are_coming_into_core_on_wrong/" target="_blank">Reddit - Branch Office FGs are coming into core on wrong VPN tunnel</a></li>
+    </ul>
+
+    <p id="correctAnswer_question14" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. Peer ID
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer14.js"></script>
