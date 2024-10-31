@@ -47,3 +47,4 @@
 |40|VLANs|Virtual Local Area Networks|
 |41|LACP|Link Aggregation Control Protocol|
 |42|UUID|Universally Unique Identifier|
+|43|FGCP|FortiGate Clustering Protocol|
