@@ -1,0 +1,50 @@
+<div>
+  <h2>Question 4</h2>
+  <p>Which two statements are true about the FGCP protocol? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="fgcpProtocol" value="A" id="optionA_4">
+      <label for="optionA_4">A. FGCP is not used when FortiGate is in transparent mode.</label><br>
+
+      <input type="checkbox" name="fgcpProtocol" value="B" id="optionB_4">
+      <label for="optionB_4">B. FGCP elects the primary FortiGate device.</label><br>
+
+      <input type="checkbox" name="fgcpProtocol" value="C" id="optionC_4">
+      <label for="optionC_4">C. FGCP is used to discover FortiGate devices in different HA groups.</label><br>
+
+      <input type="checkbox" name="fgcpProtocol" value="D" id="optionD_4">
+      <label for="optionD_4">D. FGCP runs only over the heartbeat links.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question4">Solution</button>
+
+  <div id="solutionInfo_question4" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q4.png">
+    <p>
+      B: FGCP elects the primary FortiGate device.<br>
+      D: FGCP runs only over the heartbeat links.<br><br>
+      These statements are true because the FGCP protocol is specifically designed to operate over heartbeat links to ensure communication and synchronization between cluster units, and it is responsible for electing the primary FortiGate device within the cluster. The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby FortiGates can find other member FortiGates to negotiate and create a cluster.
+    </p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.4.0/ports-and-protocols/564712/fgcp-fortigate-clustering-protocol" target="_blank">Fortinet Documentation - FGCP FortiGate Clustering Protocol</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/23a6ef88-6864-11ea-9384-00505692583a/FortiOS-6.4.0-Ports_and_Protocols.pdf" target="_blank">Fortinet Documentation - Ports and Protocols</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/62403/introduction-to-the-fgcp-cluster" target="_blank">Fortinet Documentation - Introduction to the FGCP Cluster</a></li>
+      <li><a href="https://infosecmonkey.com/fortigate-fgcp-vs-fgsp-for-high-availability/" target="_blank">InfoSec Monkey - FGCP vs FGSP for High Availability</a></li>
+      <li><a href="https://www.fortinetguru.com/2016/09/an-introduction-to-the-fgcp/" target="_blank">Fortinet Guru - Introduction to the FGCP</a></li>
+      <li><a href="https://notes.pbe9216.net/2016/2016-07-06-fortigate-high-availability-fgcp/" target="_blank">PBE Notes - FortiGate High Availability FGCP</a></li>
+    </ul>
+
+    <p id="correctAnswers_question4" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      B. FGCP elects the primary FortiGate device.<br>
+      D. FGCP runs only over the heartbeat links.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer4.js"></script>

@@ -1,0 +1,51 @@
+<div>
+  <h2>Question 10</h2>
+  <p>Refer to the exhibit.</p>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q10.png" alt="Configuration Exhibit" style="width: 600px; height: auto;">
+
+  <p>The exhibit shows a diagram of a FortiGate device connected to the network, the firewall policy and VIP configuration on the FortiGate device, and the routing table on the ISP router.</p>
+
+  <p>When the administrator tries to access the web server public address (203.0.113.2) from the internet, the connection times out. At the same time the administrator runs a sniffer on FortiGate to capture incoming web traffic to the server and does not see any output.</p>
+
+  <p>Based on the information shown in the exhibit, what configuration change must the administrator make to fix the connectivity issue?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="connectivityIssueFix" value="A" id="optionA_10">
+      <label for="optionA_10">A. Configure a loopback interface with address 203.0.113.2/32.</label><br>
+
+      <input type="radio" name="connectivityIssueFix" value="B" id="optionB_10">
+      <label for="optionB_10">B. In the VIP configuration, enable arp-reply.</label><br>
+
+      <input type="radio" name="connectivityIssueFix" value="C" id="optionC_10">
+      <label for="optionC_10">C. In the firewall policy configuration, enable match-vip.</label><br>
+
+      <input type="radio" name="connectivityIssueFix" value="D" id="optionD_10">
+      <label for="optionD_10">D. Enable port forwarding on the server to map the external service port to the internal service port.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question10">Solution</button>
+
+  <div id="solutionInfo_question10" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>In the routing table of the ISP we can see that the route is C (connected) which means that if there is no ARP entry, traffic will be dropped by the ISP, and this is why there is no packets in the forti sniffer.</p>
+    <p> it will be if in the ISP we have a static route to that subnet, in that case at least we would see traffic</p>
+    <p>A. Makes no sense</p>
+    <p>B. This option is available for VIP configurations please check page 115 on security study materials, so this is the correct answer</p>
+    <p>C. It is no required to solve the problem due to firewall policy is allowing all traffic for VIP object</p>
+    <p>D. This option is enabled only for deny policies please check the note in https://community.fortinet.com/t5/FortiGate/Technical-Tip-Firewall-does-not-block-incoming-WAN-to-LAN/ta-p/189641?externalID=FD36750</p>
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://ebin.pub/fortinet-fortigate-security-study-guide-for-fortios-72.html" target="_blank">Fortinet Security Study Guide for FortiOS 7.2</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.4.11/fortios-release-notes/350283/enabling-match-vip-in-firewall-policies" target="_blank">Fortinet Documentation - Enabling Match VIP</a></li>
+    </ul>
+
+    <p id="correctAnswers_question10" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      B. In the VIP configuration, enable arp-reply.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer10.js"></script>

@@ -1,0 +1,45 @@
+<div>
+  <h2>Question 2</h2>
+  <p>Refer to the exhibit showing a debug flow output.<br>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q2.png"></p>
+  <p>What two conclusions can you make from the debug flow output? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="debugFlow" value="A" id="optionA_2">
+      <label for="optionA_2">A. The debug flow is for ICMP traffic.</label><br>
+
+      <input type="checkbox" name="debugFlow" value="B" id="optionB_2">
+      <label for="optionB_2">B. A firewall policy allowed the connection.</label><br>
+
+      <input type="checkbox" name="debugFlow" value="C" id="optionC_2">
+      <label for="optionC_2">C. A new traffic session was created.</label><br>
+
+      <input type="checkbox" name="debugFlow" value="D" id="optionD_2">
+      <label for="optionD_2">D. The default route is required to receive a reply.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question2">Solution</button>
+
+  <div id="solutionInfo_question2" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q2_2.png">
+    <p>A and C are correct. The debug flow indicates ICMP traffic with "type=8, code=0", which corresponds to ICMP echo requests. Additionally, the line "msg='allocate a new session-00003dd5'" confirms that a new session was created for this traffic.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/54688/debugging-the-packet-flow" target="_blank">Fortinet - Debugging the Packet Flow</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/38044/using-the-debug-flow-tool" target="_blank">Fortinet Documentation - Debug Flow Tool</a></li>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Initial-troubleshooting-steps-for-traffic/ta-p/190456" target="_blank">Fortinet Community - Traffic Troubleshooting</a></li>
+    </ul>
+
+    <p id="correctAnswers_question2" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. The debug flow is for ICMP traffic.<br>
+      C. A new traffic session was created.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer2.js"></script>

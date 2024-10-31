@@ -1,0 +1,50 @@
+<div>
+  <h2>Question 7</h2>
+  <p>Refer to the exhibit.</p>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q7.png" alt="Exhibit for Question 7" style="max-width: 100%; height: auto;">
+  <p>The administrator configured SD-WAN rules and set the FortiGate traffic log page to display SD-WAN-specific columns: SD-WAN Quality and SD-WAN Rule Name.</p>
+  <p>FortiGate allows the traffic according to policy ID 1. This is the policy that allows SD-WAN traffic.</p>
+  <p>Despite these settings, the traffic logs do not show the name of the SD-WAN rule used to steer those traffic flows.</p>
+  <p>What can be the reason?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="sdwanIssue" value="A" id="optionA_7">
+      <label for="optionA_7">A. FortiGate load balanced the traffic according to the implicit SD-WAN rule.</label><br>
+
+      <input type="radio" name="sdwanIssue" value="B" id="optionB_7">
+      <label for="optionB_7">B. There is no application control profile applied to the firewall policy.</label><br>
+
+      <input type="radio" name="sdwanIssue" value="C" id="optionC_7">
+      <label for="optionC_7">C. Destination in the SD-WAN rules are configured per application but the feature visibility is not enabled.</label><br>
+
+      <input type="radio" name="sdwanIssue" value="D" id="optionD_7">
+      <label for="optionD_7">D. SD-WAN rule names do not appear immediately. The administrator needs to refresh the page.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question7">Solution</button>
+
+  <div id="solutionInfo_question7" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q7_2.png">
+    <p>FortiGate may have load balanced the traffic according to the implicit SD-WAN rule, which would prevent the specific SD-WAN rule name from appearing in the logs.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.0.0/sd-wan-sd-branch-deployment-guide/727336/creating-sd-wan-rules" target="_blank">Fortinet Documentation - Creating SD-WAN Rules</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.2.16/cookbook/22371/sd-wan-rules-best-quality" target="_blank">Fortinet Documentation - SD-WAN Rules Best Quality</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/10p64cd/configuring_sdwan_after_already_creating_tons_of/" target="_blank">Reddit Discussion - Configuring SD-WAN</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/8f56439e-d0e2-11ee-8c42-fa163e15d75b/SD-WAN%C2%A0Direct_Internet_Access-7.4.0-Deployment_Guide.pdf" target="_blank">Fortinet Documentation - SD-WAN Direct Internet Access Deployment Guide</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/j180i5/sdwan_rules_block_applications_on_backup_link/" target="_blank">Reddit Discussion - SD-WAN Rules Blocking Applications</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/18c9a398-b46b-11ec-9fd1-fa163e15d75b/secure-sdwan-7.0-concept-guide.pdf" target="_blank">Fortinet Documentation - Secure SD-WAN Concept Guide</a></li>
+    </ul>
+
+    <p id="correctAnswers_question7" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. FortiGate load balanced the traffic according to the implicit SD-WAN rule.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer7.js"></script>

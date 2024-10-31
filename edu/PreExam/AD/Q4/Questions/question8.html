@@ -1,0 +1,48 @@
+<div>
+  <h2>Question 8</h2>
+  <p>FortiGuard categories can be overridden and defined in different categories. To create a web rating override for the example.com home page, the override must be configured using a specific syntax.</p>
+  <p>Which two syntaxes are correct to configure a web rating override for the home page? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="webRatingOverride" value="A" id="optionA_8">
+      <label for="optionA_8">A. www.example.com:443</label><br>
+
+      <input type="checkbox" name="webRatingOverride" value="B" id="optionB_8">
+      <label for="optionB_8">B. www.example.com</label><br>
+
+      <input type="checkbox" name="webRatingOverride" value="C" id="optionC_8">
+      <label for="optionC_8">C. www.example.com/index.hrml</label><br>
+
+      <input type="checkbox" name="webRatingOverride" value="D" id="optionD_8">
+      <label for="optionD_8">D. example.com</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question8">Solution</button>
+
+  <div id="solutionInfo_question8" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>B. www.example.com: This syntax specifies the full domain name, which is correct for overriding the web rating for the home page.</p>
+    <p>D. example.com: This is another valid syntax that represents the base domain and also applies to the home page.</p>
+    <p>C. www.example.com/index.hrml: This syntax includes a specific file path that does not match the intended home page (which typically would be the root or default file) and also contains a typo (.hrml instead of .html), making it incorrect.</p>
+    <p>A. www.example.com:443: While this specifies the port, it is not necessary for defining a web rating override for the home page and is not a standard practice for overriding in FortiGuard.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-configure-web-rating-override-for-specific/ta-p/193384" target="_blank">Fortinet Community - Web Rating Override Configuration</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/296555/configuring-the-category-override-rule" target="_blank">Fortinet Documentation - Configuring Category Override Rule</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/1135mky/webfilter_ignoring_the_web_category_override/" target="_blank">Reddit Discussion - Webfilter Ignoring Category Override</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/smupjq/web_rating_override_issue/" target="_blank">Reddit Discussion - Web Rating Override Issue</a></li>
+      <li><a href="https://www.fortinetguru.com/2016/11/overriding-fortiguard-website-categorization/" target="_blank">Fortinet Guru - Overriding FortiGuard Website Categorization</a></li>
+    </ul>
+
+    <p id="correctAnswers_question8" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      B. www.example.com<br>
+      D. example.com
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer8.js"></script>

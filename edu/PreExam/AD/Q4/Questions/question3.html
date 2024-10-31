@@ -1,0 +1,50 @@
+<div>
+  <h2>Question 3</h2>
+  <p>Which three statements explain a flow-based antivirus profile? (Choose three.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="flowAntivirus" value="A" id="optionA_3">
+      <label for="optionA_3">A. Flow-based inspection uses a hybrid of the scanning modes available in proxy-based inspection.</label><br>
+
+      <input type="checkbox" name="flowAntivirus" value="B" id="optionB_3">
+      <label for="optionB_3">B. Flow-based inspection optimizes performance compared to proxy-based inspection.</label><br>
+
+      <input type="checkbox" name="flowAntivirus" value="C" id="optionC_3">
+      <label for="optionC_3">C. FortiGate buffers the whole file but transmits to the client at the same time.</label><br>
+
+      <input type="checkbox" name="flowAntivirus" value="D" id="optionD_3">
+      <label for="optionD_3">D. If a virus is detected, the last packet is delivered to the client.</label><br>
+
+      <input type="checkbox" name="flowAntivirus" value="E" id="optionE_3">
+      <label for="optionE_3">E. The IPS engine handles the process as a standalone.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question3">Solution</button>
+
+  <div id="solutionInfo_question3" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>
+      B: Flow-based inspection is typically faster and has lower latency because it scans traffic as it flows through, rather than buffering and inspecting the entire file as in proxy-based inspection.<br>
+      C: In flow-based inspection, FortiGate can start sending parts of the file to the client while continuing to scan, which helps to reduce latency.<br>
+      E: The IPS (Intrusion Prevention System) engine is responsible for handling flow-based antivirus scanning in FortiGate, working as a standalone process for better performance.
+    </p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://help.fortinet.com/fos50hlp/56/Content/FortiOS/fortigate-security-profiles/Inspection%20Modes/flow_mode.htm" target="_blank">Fortinet Documentation - Flow Mode</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.4.0/new-features/857402/security-profiles-enhancements" target="_blank">Fortinet Documentation - Security Profiles Enhancements</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/djabpj/eli5_flowbased_vs_proxy_use_reasons/" target="_blank">Reddit - Flow-based vs Proxy Inspection</a></li>
+    </ul>
+
+    <p id="correctAnswers_question3" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      B. Flow-based inspection optimizes performance compared to proxy-based inspection.<br>
+      C. FortiGate buffers the whole file but transmits to the client at the same time.<br>
+      E. The IPS engine handles the process as a standalone.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer3.js"></script>

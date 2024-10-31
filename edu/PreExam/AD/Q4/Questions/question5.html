@@ -1,0 +1,47 @@
+<div>
+  <h2>Question 5</h2>
+  <p>Refer to the exhibit which contains a RADIUS server configuration.</p>
+  <img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q4/img/q5.png?raw=true" alt="RADIUS Server Configuration Exhibit" style="max-width: 100%; height: auto;">
+  
+  <p>An administrator added a configuration for a new RADIUS server. While configuring, the administrator selected the Include in every user group option.</p>
+  <p>What is the impact of using the Include in every user group option in a RADIUS configuration?</p>
+  
+  <form>
+    <div>
+      <input type="radio" name="radiusImpact" value="A" id="optionA_5">
+      <label for="optionA_5">A. This option places the RADIUS server, and all users who can authenticate against that server, into every FortiGate user group</label><br>
+
+      <input type="radio" name="radiusImpact" value="B" id="optionB_5">
+      <label for="optionB_5">B. This option places all users into every RADIUS user group, including groups that are used for the LDAP server on FortiGate</label><br>
+
+      <input type="radio" name="radiusImpact" value="C" id="optionC_5">
+      <label for="optionC_5">C. This option places all FortiGate users and groups required to authenticate into the RADIUS server, which, in this case is FortiAuthenticator</label><br>
+
+      <input type="radio" name="radiusImpact" value="D" id="optionD_5">
+      <label for="optionD_5">D. This option places the RADIUS server, and all users who can authenticate against that server, into every RADIUS group</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question5">Solution</button>
+
+  <div id="solutionInfo_question5" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>When the "Include in every user group" option is selected for a RADIUS server in the FortiGate configuration, it effectively makes the users authenticated against that RADIUS server available to all user groups configured on the FortiGate device. This means that any user who can authenticate against that RADIUS server will be treated as part of every user group, allowing for broader access and simplifying group management for users authenticated via RADIUS.</p>
+    
+    <p id="correctAnswers_question5" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. This option places the RADIUS server, and all users who can authenticate against that server, into every FortiGate user group.
+    </p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/759080/configuring-a-radius-server" target="_blank">Fortinet Documentation - Configuring a RADIUS Server</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/f10cede7-228d-11ef-8c42-fa163e15d75b/FortiOS-7.6.0-Administration_Guide.pdf" target="_blank">Fortinet Documentation - FortiOS 7.6.0 Administration Guide</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortiauthenticator/6.5.0/cookbook/390697/connecting-the-fortigate-to-the-radius-server" target="_blank">Fortinet Cookbook - Connecting the FortiGate to the RADIUS Server</a></li>
+      <li><a href="https://jumpcloud.com/support/configure-fortigate-to-use-cloud-radius" target="_blank">JumpCloud - Configure FortiGate to Use Cloud RADIUS</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/xfm2y5/fortigate_administrator_radius_authentication/" target="_blank">Reddit Discussion - FortiGate Administrator RADIUS Authentication</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="../Scripts/answer5.js"></script>

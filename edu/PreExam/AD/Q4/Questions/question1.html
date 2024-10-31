@@ -1,0 +1,43 @@
+<div>
+  <h2>Question 1</h2>
+  <p>Which two attributes are required on a certificate so it can be used as a CA certificate on SSL inspection? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="certificateAttribute" value="A" id="optionA_1">
+      <label for="optionA_1">A. The issuer must be a public CA</label><br>
+
+      <input type="checkbox" name="certificateAttribute" value="B" id="optionB_1">
+      <label for="optionB_1">B. The CA extension must be set to TRUE</label><br>
+
+      <input type="checkbox" name="certificateAttribute" value="C" id="optionC_1">
+      <label for="optionC_1">C. The Authority Key Identifier must be of type SSL</label><br>
+
+      <input type="checkbox" name="certificateAttribute" value="D" id="optionD_1">
+      <label for="optionD_1">D. The keyUsage extension must be set to keyCertSign</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question1">Solution</button>
+
+  <div id="solutionInfo_question1" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>B and D are correct. The CA=True value identifies the certificate as a CA certificate, and the keyUsage=keyCertSign value indicates that the certificate's corresponding private key is permitted to sign certificates. See RFC 5280 section 4.2.1.9 Basic Constraints.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-import-the-CA-certificate-for-full-SSL/ta-p/189786" target="_blank">Fortinet Community - Import CA certificate for SSL</a></li>
+      <li><a href="https://help.fortinet.com/fmgr/50hlp/56/5-6-2/FMG-FAZ/2400_System_Settings/1400_Certificate/0400_CA%20Certificates.htm" target="_blank">Fortinet - CA Certificates</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/611729/ca-certificate" target="_blank">Fortinet Documentation - CA Certificate</a></li>
+      <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/f10cede7-228d-11ef-8c42-fa163e15d75b/FortiOS-7.6.0-Administration_Guide.pdf" target="_blank">Fortinet - Administration Guide FortiOS 7.6.0</a></li>
+    </ul>
+
+    <p id="correctAnswers_question1" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      B. The CA extension must be set to TRUE<br>
+      D. The keyUsage extension must be set to keyCertSign
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer1.js"></script>
