@@ -1,0 +1,44 @@
+<div>
+  <h2>Question 11</h2>
+  <p>An organization requires remote users to send external application data running on their PCs and access FTP resources through an SSL/TLS connection.</p>
+  
+  <p>Which FortiGate configuration can achieve this goal?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="vpnConfiguration" value="A" id="optionA_11">
+      <label for="optionA_11">A. SSL VPN quick connection</label><br>
+
+      <input type="radio" name="vpnConfiguration" value="B" id="optionB_11">
+      <label for="optionB_11">B. SSL VPN tunnel</label><br>
+
+      <input type="radio" name="vpnConfiguration" value="C" id="optionC_11">
+      <label for="optionC_11">C. SSL VPN bookmark</label><br>
+
+      <input type="radio" name="vpnConfiguration" value="D" id="optionD_11">
+      <label for="optionD_11">D. Zero trust network access</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question11">Solution</button>
+
+  <div id="solutionInfo_question11" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q11.png">
+    <p>SSL VPN tunnel is a FortiGate configuration that allows remote users to connect to the FortiGate firewall through an SSL/TLS connection. This connection provides a secure tunnel between the remote user's PC and the FortiGate firewall, which allows the remote user to send external application data running on their PCs and access FTP resources through the firewall.</p>
+    <p>The keyword here is "External Application". Web mode can only be run in a web browser.</p>
+    <p>FortiGate Infrastructure 7.2 Study Guide (p.198):</p>
+
+    <p id="correctAnswers_question11" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      B. SSL VPN tunnel
+    </p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://ebin.pub/fortinet-fortigate-infrastructure-study-guide-for-fortios-72.html" target="_blank">Fortinet FortiGate Infrastructure Study Guide for FortiOS 7.2</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="../Scripts/answer11.js"></script>

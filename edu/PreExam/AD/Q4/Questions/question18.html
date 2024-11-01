@@ -1,0 +1,41 @@
+<div>
+  <h2>Question 18</h2>
+  <p>How can you disable RPF checking?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="rpfChecking" id="optionA_18" value="A">
+      <label for="optionA_18">A. Disable src-check on the interface level settings.</label><br>
+
+      <input type="radio" name="rpfChecking" id="optionB_18" value="B">
+      <label for="optionB_18">B. Unset fail-alert-interfaces on the interface level settings.</label><br>
+
+      <input type="radio" name="rpfChecking" id="optionC_18" value="C">
+      <label for="optionC_18">C. Disable fail-detect on the interface level settings.</label><br>
+
+      <input type="radio" name="rpfChecking" id="optionD_18" value="D">
+      <label for="optionD_18">D. Disable strict-src-check under system settings.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question18">Solution</button>
+
+  <div id="solutionInfo_question18" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>To disable RPF at the interface level, you use the following commands:</p>
+    <pre>
+config system interface
+edit interface
+set src-check disable
+end
+    </pre>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q18.png" alt="Disable RPF Checking" />
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-disable-Reverse-Path-Forwarding-RPF-per/ta-p/193338" target="_blank">Disable RPF Checking</a></li>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-Reverse-Path-Forwarding-RPF-implementation-and-use/ta-p/194382" target="_blank">RPF Implementation and Use</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="../Scripts/answer18.js"></script>

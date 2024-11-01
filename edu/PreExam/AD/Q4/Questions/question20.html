@@ -1,0 +1,42 @@
+<div>
+  <h2>Question 20</h2>
+  <p>FortiGate is operating in NAT mode and has two physical interfaces connected to the LAN and DMZ networks respectively. Which two statements are true about the requirements of connected physical interfaces on FortiGate? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="fortiGateRequirements" value="A" id="optionA_20">
+      <label for="optionA_20">A. Both interfaces must have the interface role assigned</label><br>
+
+      <input type="checkbox" name="fortiGateRequirements" value="B" id="optionB_20">
+      <label for="optionB_20">B. Both interfaces must have directly connected routes on the routing table</label><br>
+
+      <input type="checkbox" name="fortiGateRequirements" value="C" id="optionC_20">
+      <label for="optionC_20">C. Both interfaces must have DHCP enabled</label><br>
+
+      <input type="checkbox" name="fortiGateRequirements" value="D" id="optionD_20">
+      <label for="optionD_20">D. Both interfaces must have IP addresses assigned</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question20">Solution</button>
+
+  <div id="solutionInfo_question20" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>B is crucial. FortiGate needs to know how to reach networks connected to its interfaces. Directly connected routes ensure that traffic destined for the LAN or DMZ can be forwarded correctly.</p>
+    <p>D is also important. Each interface in NAT mode must have an IP address assigned for it to communicate effectively on its respective network (LAN or DMZ).</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/Support-Forum/Incoming-NAT/td-p/294282" target="_blank">Fortinet Support Forum - Incoming NAT</a></li>
+      <li><a href="https://greenclouddefense.com/knowledge-base/fortigate-nat-policies/#:~:text=NAT%20policies%20allow%20translation%20of,functionality%20of%20a%20single%20address." target="_blank">Green Cloud Defense - FortiGate NAT Policies</a></li>
+    </ul>
+
+    <p id="correctAnswers_question20" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      B. Both interfaces must have directly connected routes on the routing table.<br>
+      D. Both interfaces must have IP addresses assigned.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer20.js"></script>

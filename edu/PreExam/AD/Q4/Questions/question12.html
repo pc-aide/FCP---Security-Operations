@@ -1,0 +1,60 @@
+<div>
+  <h2>Question 12</h2>
+  <p>Which three statements about SD-WAN zones are true? (Choose three.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="sdwanZones" value="A" id="optionA_12">
+      <label for="optionA_12">A. An SD-WAN zone can contain physical and logical interfaces</label><br>
+
+      <input type="checkbox" name="sdwanZones" value="B" id="optionB_12">
+      <label for="optionB_12">B. You can use an SD-WAN zone in static route definitions</label><br>
+
+      <input type="checkbox" name="sdwanZones" value="C" id="optionC_12">
+      <label for="optionC_12">C. You can define up to three SD-WAN zones per FortiGate device</label><br>
+
+      <input type="checkbox" name="sdwanZones" value="D" id="optionD_12">
+      <label for="optionD_12">D. An SD-WAN zone must contain at least two members</label><br>
+
+      <input type="checkbox" name="sdwanZones" value="E" id="optionE_12">
+      <label for="optionE_12">E. An SD-WAN zone is a logical grouping of members</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question12">Solution</button>
+
+  <div id="solutionInfo_question12" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q12.png">
+    <p>
+      A. In SD-WAN, a zone can group different types of interfaces, including both physical (e.g., Ethernet) and logical (e.g., VLAN or VPN) interfaces. This flexibility allows for better traffic management and distribution across various types of network paths.
+    </p>
+    <p>
+      B. SD-WAN zones are often used in static routing to define routes where traffic should be directed. This is helpful for steering traffic based on business needs and the performance of specific WAN paths, enhancing control over routing policies.
+    </p>
+    <p>
+      E. An SD-WAN zone is indeed a logical construct that groups multiple interfaces or "members" together. This grouping helps in managing traffic flows by defining specific policies for grouped interfaces in an SD-WAN deployment.
+    </p>
+    <p>
+      C. This statement is incorrect because FortiGate devices support multiple SD-WAN zones, not just three. The exact number of zones may vary based on the device model and firmware, but it’s generally more than three.
+    </p>
+    <p>
+      D. This statement is also incorrect because an SD-WAN zone can contain just one member. While it's common to have multiple members to benefit from SD-WAN features like load balancing, it’s not a strict requirement.
+    </p>
+
+    <p id="correctAnswers_question12" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. An SD-WAN zone can contain physical and logical interfaces<br>
+      B. You can use an SD-WAN zone in static route definitions<br>
+      E. An SD-WAN zone is a logical grouping of members
+    </p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/942095/sd-wan-members-and-zones" target="_blank">Fortinet Documentation - SD-WAN Members and Zones</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.4.5/administration-guide/942095/sd-wan-zones" target="_blank">Fortinet Documentation - SD-WAN Zones</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="../Scripts/answer12.js"></script>

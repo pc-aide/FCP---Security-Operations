@@ -1,0 +1,53 @@
+<div>
+  <h2>Question 15</h2>
+  <p>Refer to the exhibit.</p>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q15.png" alt="Exhibit for Question 15" />
+  <p>The NOC team connects to the FortiGate GUI with the NOC_Access admin profile. They request that their GUI sessions do not disconnect too early during inactivity.</p>
+  <p>What must the administrator configure to answer this specific request from the NOC team?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="nocRequest" value="A" id="optionA_15">
+      <label for="optionA_15">A. Enable the parameter Never Timeout in the admin profiles.</label><br>
+
+      <input type="radio" name="nocRequest" value="B" id="optionB_15">
+      <label for="optionB_15">B. Increase the admintimeout value under config system accprofile super_admin.</label><br>
+
+      <input type="radio" name="nocRequest" value="C" id="optionC_15">
+      <label for="optionC_15">C. Increase the admintimeout value under config system global.</label><br>
+
+      <input type="radio" name="nocRequest" value="D" id="optionD_15">
+      <label for="optionD_15">D. Increase the offline value of the Override idle Timeout parameter in the NOC_Access admin profile.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question15">Solution</button>
+
+  <div id="solutionInfo_question15" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q15_2.png">
+    <p>
+      To configure the authentication timeout for a user group:
+      <pre>
+config user group
+    edit &lt;name&gt;
+        set authtimeout &lt;integer&gt;
+    next
+end
+      </pre>
+    </p>
+    <p id="correctAnswers_question15" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      C. Increase the admintimeout value under config system global.
+    </p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://community.fortinet.com/t5/Support-Forum/Anyone-experiencing-GUI-Authentication-issues-on-7-4-4/m-p/317333" target="_blank">Fortinet Support Forum</a></li>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Cannot-access-the-FortiGate-web-admin/ta-p/190239" target="_blank">Fortinet Troubleshooting Tip</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.2.3/administration-guide/779401/user-and-user-group-timeouts" target="_blank">Fortinet Administration Guide</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="../Scripts/answer15.js"></script>

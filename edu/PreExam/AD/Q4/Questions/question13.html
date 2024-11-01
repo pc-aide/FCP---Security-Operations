@@ -1,0 +1,44 @@
+<div>
+  <h2>Question 13</h2>
+  <p>An administrator has configured a strict RPF check on FortiGate.</p>
+  <p>How does strict RPF check work?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="rpfCheck" value="A" id="optionA_13">
+      <label for="optionA_13">A. Strict RPF checks the best route back to the source using the incoming interface.</label><br>
+
+      <input type="radio" name="rpfCheck" value="B" id="optionB_13">
+      <label for="optionB_13">B. Strict RPF allows packets back to sources with all active routes.</label><br>
+
+      <input type="radio" name="rpfCheck" value="C" id="optionC_13">
+      <label for="optionC_13">C. Strict RPF checks only for the existence of at least one active route back to the source using the incoming interface.</label><br>
+
+      <input type="radio" name="rpfCheck" value="D" id="optionD_13">
+      <label for="optionD_13">D. Strict RPF check is run on the first sent and reply packet of any new session.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question13">Solution</button>
+
+  <div id="solutionInfo_question13" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>
+      Strict: In this mode, Fortigate also verifies that the matching route is the best route in the routing table. That is, if the route in table contains a matching route for the source address and the incoming interface, but there is a better route for the source address through another interface, then the RPF check fails.
+    </p>
+    <p id="correctAnswers_question13" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. Strict RPF checks the best route back to the source using the incoming interface.
+    </p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://ebin.pub/fortinet-fortigate-infrastructure-study-guide-for-fortios-72.html" target="_blank">Fortinet Infrastructure Study Guide v7.0, Page 38</a></li>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-Reverse-Path-Forwarding-RPF-implementation-and-use/ta-p/194382" target="_blank">Fortinet Community - RPF Implementation and Use</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/ntrasv/rpf_in_a_gortigate/" target="_blank">Reddit - RPF in FortiGate</a></li>
+      <li><a href="https://infosecmonkey.com/reverse-path-forwarding-on-fortigate-firewalls/" target="_blank">InfosecMonkey - Reverse Path Forwarding on FortiGate Firewalls</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="../Scripts/answer13.js"></script>

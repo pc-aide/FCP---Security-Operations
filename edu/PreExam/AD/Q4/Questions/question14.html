@@ -1,0 +1,47 @@
+<div>
+  <h2>Question 14</h2>
+  <p>A network administrator has enabled full SSL inspection and web filtering on FortiGate. When visiting any HTTPS websites, the browser reports certificate warning errors. When visiting HTTP websites, the browser does not report errors.</p>
+  <p>What is the reason for the certificate warning errors?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="sslInspection" value="A" id="optionA_14">
+      <label for="optionA_14">A. The option invalid SSL certificates is set to allow on the SSL/SSH inspection profile.</label><br>
+
+      <input type="radio" name="sslInspection" value="B" id="optionB_14">
+      <label for="optionB_14">B. The browser does not trust the certificate used by FortiGate for SSL inspection.</label><br>
+
+      <input type="radio" name="sslInspection" value="C" id="optionC_14">
+      <label for="optionC_14">C. The certificate used by FortiGate for SSL inspection does not contain the required certificate extensions.</label><br>
+
+      <input type="radio" name="sslInspection" value="D" id="optionD_14">
+      <label for="optionD_14">D. The matching firewall policy is set to proxy inspection mode.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question14">Solution</button>
+
+  <div id="solutionInfo_question14" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q14.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q14_2.png">
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q14_3.png">
+    <p>
+      When a FortiGate firewall performs SSL inspection, it essentially acts as a "man-in-the-middle" by decrypting and re-encrypting HTTPS traffic. To avoid certificate warnings, the browser must trust the certificate that FortiGate uses to re-encrypt the traffic. If the FortiGate SSL inspection certificate is not installed as a trusted certificate in the browser or operating system, the browser will display certificate warnings.
+    </p>
+    <p id="correctAnswers_question14" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      B. The browser does not trust the certificate used by FortiGate for SSL inspection.
+    </p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/505842/certificate-inspection" target="_blank">Fortinet Administration Guide</a></li>
+      <li><a href="https://www.petenetlive.com/kb/article/0001729" target="_blank">Petenetlive Article</a></li>
+      <li><a href="https://www.fortinetguru.com/2019/11/ssl-inspection-certificate-inspection-deep-inspection/" target="_blank">FortinetGuru Article</a></li>
+      <li><a href="https://community.spiceworks.com/t/fortigate-ssl-inspection-ca-signed-certificate/754418" target="_blank">Spiceworks Community Post</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="../Scripts/answer14.js"></script>

@@ -1,0 +1,43 @@
+<div>
+  <h2>Question 17</h2>
+  <p>Refer to the exhibit.</p>
+  <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q17.png" alt="IPS Diagnostic Command Exhibit" />
+  <p>If option 5 is used with the IPS diagnostic command and the outcome is a decrease in the CPU usage, what is the correct conclusion?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="ipsConclusion" id="optionA_17" value="A">
+      <label for="optionA_17">A. The IPS engine is blocking all traffic.</label><br>
+
+      <input type="radio" name="ipsConclusion" id="optionB_17" value="B">
+      <label for="optionB_17">B. The IPS engine is inspecting a high volume of traffic.</label><br>
+
+      <input type="radio" name="ipsConclusion" id="optionC_17" value="C">
+      <label for="optionC_17">C. The IPS engine is unable to prevent an intrusion attack.</label><br>
+
+      <input type="radio" name="ipsConclusion" id="optionD_17" value="D">
+      <label for="optionD_17">D. The IPS engine will continue to run in a normal state.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question17">Solution</button>
+
+  <div id="solutionInfo_question17" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q4/img/q17_2.png" alt="IPS Diagnostic Command Output" />
+    <p>If the CPU use decreases after that, it usually indicates that the volume of traffic being inspected is too high for that FortiGate model. If there are high-CPU use problems caused by the IPS, you can use the <code>diagnose test application ipsmonitor</code> command with option 5 to isolate where the problem might be. Option 5 enables IPS bypass mode. In this mode, the IPS engine is still running, but it is not inspecting traffic.</p>
+    <p>If the CPU use decreases after that, it usually indicates that the volume of traffic being inspected is too high for that FortiGate model. If the CPU use remains high after enabling IPS bypass mode, it usually indicates a problem in the IPS engine, which you must report to Fortinet Support.</p>
+
+    <p id="correctAnswers_question17" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      B. The IPS engine is inspecting a high volume of traffic.
+    </p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://ebin.pub/fortinet-fortigate-security-study-guide-for-fortios-72.html" target="_blank">Fortinet Security Study Guide</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="../Scripts/answer17.js"></script>

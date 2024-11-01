@@ -1,0 +1,46 @@
+<div>
+  <h2>Question 16</h2>
+  <p>A network administrator enabled antivirus and selected an SSL inspection profile on a firewall policy.</p>
+  <p>When downloading an EICAR test file through HTTP, FortiGate detects the virus and blocks the file. When downloading the same file through HTTPS, FortiGate does not detect the virus and does not block the file, allowing it to be downloaded.</p>
+  <p>The administrator confirms that the traffic matches the configured firewall policy.</p>
+  <p>What are two reasons for the failed virus detection by FortiGate? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="virusDetectionReasons" id="optionA_16" value="A">
+      <label for="optionA_16">A. The selected SSL inspection profile has certificate inspection enabled.</label><br>
+
+      <input type="checkbox" name="virusDetectionReasons" id="optionB_16" value="B">
+      <label for="optionB_16">B. The browser does not trust the FortiGate self-signed CA certificate.</label><br>
+
+      <input type="checkbox" name="virusDetectionReasons" id="optionC_16" value="C">
+      <label for="optionC_16">C. The EICAR test file exceeds the protocol options oversize limit.</label><br>
+
+      <input type="checkbox" name="virusDetectionReasons" id="optionD_16" value="D">
+      <label for="optionD_16">D. The website is exempted from SSL inspection.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question16">Solution</button>
+
+  <div id="solutionInfo_question16" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p>We're not talking about certificate trust warnings. The file was not decrypted, thus the antivirus engine could not recognize the payload as a virus. For HTTPS, the traffic needs to be decrypted to inspect it. In contrast, HTTP traffic isn't encrypted.</p>
+    <p id="correctAnswers_question16" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      A. The selected SSL inspection profile has certificate inspection enabled.<br>
+      D. The website is exempted from SSL inspection.
+    </p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://ebin.pub/fortinet-fortigate-security-study-guide-for-fortios-72.html" target="_blank">Fortinet Security Study Guide</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/709167/configuring-an-ssl-ssh-inspection-profile" target="_blank">Fortinet Administration Guide</a></li>
+      <li><a href="https://www.reddit.com/r/fortinet/comments/one4q2/fortigate_sslssh_inspection_how_to_properly_use/" target="_blank">Reddit Discussion on SSL Inspection</a></li>
+      <li><a href="https://www.fortinetguru.com/2018/09/fortios-6-ssl-ssh-inspection/3/" target="_blank">Fortinet Guru - SSL Inspection</a></li>
+      <li><a href="https://wannabecybersecurity.blogspot.com/2022/03/fortigate-ssltls-inspection.html" target="_blank">Wannabe Cybersecurity Blog on SSL Inspection</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="../Scripts/answer16.js"></script>
