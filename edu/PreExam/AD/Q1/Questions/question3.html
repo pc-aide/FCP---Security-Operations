@@ -26,7 +26,8 @@
 
   <div id="solutionInfo_question3" class="solutionInfo" style="display: none;">
     <p><strong>Explanation:</strong></p>
-    <p>If traffic does not match any of the SD-WAN rules, it will match the implicit rule. The algorithm used in this case is based on source and destination IP addresses, which ensures that all traffic from a specific source IP to a specific destination IP is sent through the same interface.</p>
+    <p>For traffic that does not match any of the defined SD-WAN rules, the default implicit SD-WAN rule is applied. By default, the FortiGate uses a "source-destination IP-based" algorithm, which means all traffic from a specific source IP to a specific destination IP is sent through the same interface. This ensures that a consistent path is used for traffic between the same source and destination IP addresses. Options B, C, and D do not apply because the default algorithm does not prioritize by latency, session count, or source IP alone.</p>
+    <p>FortiOS 7.4.1 Administration Guide: SD-WAN Load Balancing Algorithms​</p>
     
     <p><strong>References:</strong></p>
     <ul>
