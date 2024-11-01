@@ -28,10 +28,13 @@
 
   <div id="solutionInfo_question6" class="solutionInfo" style="display: none;">
     <p><strong>Explanation:</strong></p>
-    <p>You generally will use One-to-One when you also have VIPs (for resources hosted internally that need to be reached from the Internet).  This ensures that all traffic for a given IP (inbound AND outbound) belongs only to that server.  This also assumes you have more than one public IP available on your WAN connection. If you are only given one IP, you really wouldn't use an IP Pool at all as you would just Overload NAT all your traffic to the outbound interface IP. </p>
-    <p>If you have multiple public IPs, but many internal hosts, you may wish to set up a scheme for your Overload NAT to match up with certain networks.  For example we have 256 public IPs and use a different one for each internal subnet (i.e., guest wifi, student wifi, staff wifi, staff PCs, etc).  This helps narrow things down a bit if someone gets infected or something like that.  When we see what public IP they came from we know immediately which VLAN to look at.</p>
-    <p>Keep in mind that each public IP you have gives you a maximum of 65k connections...also I would recommend reading up on PAT vs NAT (i.e. overload vs One-to-One), as what you're asking here is more of a basic networking concept: https://techdifferences.c...tween-nat-and-pat.html</p>
-    <p>In the IP pool configuration, you should set the <strong>endip</strong> to 192.2.0.12 to ensure there are enough IPs for all devices (PC1, PC2, and PC3). Also, setting the <strong>type</strong> to overload allows multiple devices to use the same IP address with different ports.</p>
+    <p>B. In the IP pool configuration, set the ending IP to 192.2.0.12: The current IP pool range is 192.2.0.10-192.2.0.11, which only provides two IP addresses for network address translation (NAT). To allow PC3 to access the internet, the IP pool should be expanded to include an additional IP address by changing the end of the range to 192.2.0.12.</p>
+    <p>D. In the IP pool configuration, set type to overload: Instead of using a one-to-one NAT, changing the type to overload will allow multiple internal addresses (such as PC1, PC2, and PC3) to share a single external IP address. This will solve the issue without needing additional public IP addresses.</p>
+    <p>The other options are not suitable:</p>
+    <p>A. In the firewall policy configuration, add 10.0.1.3 as an address object in the source field: This option is unnecessary since the firewall policy already allows all addresses from the source (LAN port3).</p>
+    <p>C. Configure another firewall policy that matches only the address of PC3 as the source, and then place the policy on top of the list: This option is redundant and would not resolve the underlying issue with the IP pool configuration.</p>
+    <p>FortiOS 7.4.1 Administration Guide - Configuring Firewall Policies, page 512.</p>
+    <p>FortiOS 7.4.1 Administration Guide - Configuring NAT with IP Pools, page 518.</p>
     <p><strong>References:</strong></p>
     <ul>
       <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/hyperscale-firewall-guide/891511/overload-with-single-port-allocation-cgn-ip-pool" target="_blank">Overload with single port allocation - Fortinet Documentation</a></li>
