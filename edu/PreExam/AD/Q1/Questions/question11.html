@@ -26,10 +26,17 @@
 
   <div id="solutionInfo_question11" class="solutionInfo" style="display: none;">
     <p><strong>Explanation:</strong></p>
-    <p>The first rule that matches is the Excessive-Bandwidth block filter, and FaceTime is within that filter, which is applied even if only a few calls are present. This is covered in page 259 of the study guide, where it states that override rules take precedence. Therefore, Apple FaceTime will be blocked based on the Excessive-Bandwidth filter configuration.</p>
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q1/img/q11_3.png">
+    <p>It says "if there are only a few calls originating or incoming?" and additionally the name of the filter is "excessive bandwidth</p>
+    <p>IN this case we only need to take into account the position of the filter, the application, and the action. Fortigate will analyze the filter from top to bottom like a regular firewall policy. Therefore we have position, then facetime and then action block the final result will be "Block face time"</p>
+    <p>Page 310 Study guide Security module 7.2</p>
+    <p>FortiGate Security 7.2 Study Guide (p.310):<br/>
+      "Then, FortiGate scans packets for matches, in this order, for the application control profile:<br/>
+      1. Application and filter overrides: If you have configured any application overrides or filter overrides, the application control profile considers those first. It looks for a matching override starting at the top of the list, like firewall policies.<br/>2. Categories: Finally, the application control profile applies the action that you’ve configured for applications in your selected categories.
+    </p>
     <p><strong>References:</strong></p>
     <ul>
-      <li><a href="https://docs.fortinet.com/document/fortigate/7.0.0/new-features/269474/filters-for-application-control-groups-in-ngfw-mode" target="_blank">Filters for Application Control Groups</a></li>
+      <li><a href="https://ebin.pub/fortinet-fortigate-security-study-guide-for-fortios-72.html">Fortinet FortiGate Security Study Guide for FortiOS 7.2</a></li>
       <li><a href="https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/4f6cd3c1-22cb-11eb-96b9-00505692583a/FortiOS-7.0.0-New_Features_Guide.pdf" target="_blank">FortiOS New Features Guide</a></li>
     </ul>
 
