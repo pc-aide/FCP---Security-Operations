@@ -36,3 +36,4 @@
 |29||<ins>John the Ripper</ins><br/><br/><ins>L0phtCrack</ins>|
 |30|Link Aggregation|two network device become **redundant**|
 |31|NetAPI Netapi32.dll|
+|32|DDoS|<ins>Slowloris</ins><br/><br/><ins>R-U-Dead-Yet</ins><br/>|
