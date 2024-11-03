@@ -22,8 +22,12 @@
 
   <div id="solutionInfo_question12" class="solutionInfo" style="display: none;">
     <p><strong>Explanation:</strong></p>
-    <p>This setting controls the timeout for the DTLS hello packet. If the connection has high latency, adjusting this timeout allows more time for the handshake, preventing negotiation failures.</p>
-
+    <img src="https://raw.githubusercontent.com/pc-aide/FCP-SO/refs/heads/main/edu/PreExam/AD/Q1/img/q12.png">
+    <p>C : In a Fortinet SSL VPN, the "dtls-hello-timeout" setting defines the maximum time a FortiGate will wait for an initial "Hello" message from a client during the DTLS (Datagram Transport Layer Security) handshake process, essentially setting a time limit for establishing a secure connection before considering the attempt failed due to network latency or issues with the client device; this is crucial for preventing prolonged connection attempts and improving overall VPN connection stability.</p>
+    <p>DTLS is used to improve VPN performance by using UDP for lower-latency, faster transmissions compared to TCP. (option incorrect, B. SSL VPN login-timeout</p>
+    <p>Incorrect :</p>
+    <p>B. SSL VPN login-timeout<br/>The SSL VPN login-timeout in FortiGate controls the amount of time that the SSL VPN waits before disconnecting</p>
+    <p>FortiGate 7.4 Administrator Study Guide pg.287</p>
     <p><strong>References:</strong></p>
     <ul>
       <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-SSL-VPN-timers-explanation-and-SSL-VPN-Login/ta-p/203615" target="_blank">SSL VPN Timers Explanation - Fortinet Community</a></li>
