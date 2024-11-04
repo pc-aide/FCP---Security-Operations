@@ -25,8 +25,14 @@
 
   <div id="solutionInfo_question14" class="solutionInfo" style="display: none;">
     <p><strong>Explanation:</strong></p>
-    <p>The IPS sensor is configured to generate logs for all matched traffic (A). However, due to the order of the signatures, it will allow traffic matching the Microsoft.Windows.iSCSI.Target.DoS signature (C). Other attacks aimed at Windows servers would be blocked, but the specific DoS signature is allowed, making option D incorrect.</p>
-
+    <img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q1/img/q14_2.png?raw=true">
+    <p>C. The sensor will allow attackers matching the Microsoft.Windows.iSCSI.Target.DoS signature: This is correct because the action for this signature is set to "Monitor," which does not block the traffic but only logs it.</p>
+    <p>D. The sensor will block all attacks aimed at Windows servers: This is also correct because the action for the "Windows" filter is set to "Block," which will block all traffic matching Windows-related attacks.</p>
+    <p>When the IPS engine compares traffic with the signatures in each filter, order matters. The Rules are similar to firewall policy matching; the engine evaluates the filters and signatures at the top of the list first, and applies the first match. The engine skips the subsequent filters.</p>
+    <p>FortiGate Security 7.2 StudyGuide p.392</p>
+    <p>Incorrect:</p>
+    <p>A. The sensor will gather a packet log for all matched traffic: This is incorrect because packet logging is only enabled for the Microsoft.Windows.iSCSI.Target.DoS signature, not for all matched traffic.</p>
+    <p>B. The sensor will reset all connections that match these signatures: This is incorrect because there is no indication of a "reset" action in the configuration; the actions are set to Monitor and Block.</p>
     <p><strong>References:</strong></p>
     <ul>
       <li><a href="https://learn.microsoft.com/en-us/windows-server/storage/iscsi/iscsi-target-server" target="_blank">Microsoft iSCSI Target Server Documentation</a></li>
@@ -34,8 +40,8 @@
     
     <p id="correctAnswers_question14" style="display: none;">
       <strong>Correct Answer:</strong><br>
-      A. The sensor will gather a packet log for all matched traffic.<br>
-      C. The sensor will allow attackers matching the Microsoft.Windows.iSCSI.Target.DoS signature.
+      C. The sensor will allow attackers matching the Microsoft.Windows.iSCSI.Target.DoS signature.<br>
+      D. The sensor will block all attacks aimed at Windows servers.
     </p>
   </div>
 </div>
