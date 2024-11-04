@@ -25,8 +25,12 @@
 
   <div id="solutionInfo_question19" class="solutionInfo" style="display: none;">
     <p><strong>Explanation:</strong></p>
-    <p>B is correct. Page 351 of user guide. The D-WAN zone must have been manually created and therefore can be deleted. The default zone that CAN'T be deleted is the virtual-wan-link and is automatically created and is where 'FortiGate places any new member if you don't assign them to a user-defined zone'.</p>
-    
+    <img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q1/img/19_2.png?raw=true">
+    <img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q1/img/q19_3.png?raw=true">
+    <p>B is correct. Page 351 of user guide.<br/> The D-WAN zone must have been manually created and therefore can be deleted. The default zone that CAN'T be deleted is the virtual-wan-link and is automatically created and is where 'FortiGate places any new member if you don't assign them to a user-defined zone'.</p>
+    <p> In the FortiGate GUI, zones without members do not display any interfaces listed under them, which is the case for the corporate zone in the exhibit. Reference: This conclusion is based on standard Fortinet GUI interpretation and the operational logic of SD-WAN zones as per Fortinet's guidelines and user interface standards.</p>
+    <p>Incorrect :</p>
+    <p><ins>C. The d-wan zone cannot be deleted.</ins><br/>You can delete the d-wan zone because it contains no member.</p>
     <p><strong>References:</strong></p>
     <ul>
       <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/942095/sd-wan-members-and-zones" target="_blank">Fortinet Documentation - SD-WAN Members and Zones</a></li>
