@@ -2,7 +2,7 @@
 function attachSolutionButtonListeners_question14(button) {
   button.addEventListener('click', function() {
     // Define correct answers
-    const correctAnswers = ['A', 'C'];
+    const correctAnswers = ['C', 'D'];
 
     // Get selected answers
     const selectedAnswers = Array.from(document.querySelectorAll('input[name="ipsActions"]:checked'))
