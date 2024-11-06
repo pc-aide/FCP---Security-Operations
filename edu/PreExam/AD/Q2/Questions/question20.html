@@ -23,6 +23,13 @@
 
   <div id="solutionInfo_question20" class="solutionInfo" style="display: none;">
     <p><strong>Explanation:</strong></p>
+    <img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q2/img/q20_2.png?raw=true">
+    <p>DNS traffic can be allowed if user has not authenticated yet
+      Hostname resolution is often required by the application layer protocol (HTTP/HTTPS/FTP/Telnet) that is used to authenticate
+      DNS service must be explicity listed as a service in the policy</p>
+    <p>A by replicating this config on my Fortigate. If you don't add DNS to the policy you just get a timeout and the browser cannot find the site.
+      Once you add DNS you get a prompt that you must log in to access the internet</p>
+    <p>I think the confusing part of this question is that it reads as if the user is able to access the internet and is not being prompted. When in fact, they are not getting prompted AND they can't access the internet</p>
     <p>FortiGate 7.4 Administration Study Guide, page 115 (Firewall Policy - Service)</p>
     <p>If you don't add DNS to the policy, you just get a timeout and the browser cannot find the site. Once you add DNS, you get a prompt that you must log in to access the internet. The confusing part of this question is that it reads as if the user is able to access the internet and is not being prompted. In fact, they are not getting prompted AND they can't access the internet.</p>
 
