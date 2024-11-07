@@ -48,3 +48,4 @@
 |41|LACP|Link Aggregation Control Protocol|
 |42|UUID|Universally Unique Identifier|
 |43|FGCP|FortiGate Clustering Protocol|
+|44|NGFW|Next-Generation Firewall|
