@@ -37,4 +37,4 @@
 |30|Link Aggregation|two network device become **redundant**|
 |31|NetAPI|Netapi32.dll|
 |32|DDoS|<ins>Slowloris</ins><br/><br/><ins>R-U-Dead-Yet</ins><br/>|
-|33|
+|33|IP spoofing attacks|
