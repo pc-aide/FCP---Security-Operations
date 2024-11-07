@@ -1,6 +1,6 @@
 // Constants
 var score = 0; // Initialiser le score à 0
-var totalQuestions = 5; // Nombre total de questions
+var totalQuestions = 6; // Nombre total de questions
 
 // Functions
 function showFinalScore() {
@@ -90,12 +90,12 @@ function loadScripts(scripts) {
 document.addEventListener('DOMContentLoaded', function() {
     // Charger tous les scripts de réponse
     loadScripts([
-        'answer1.js', 'answer2.js', 'answer3.js', 'answer4.js', 'answer5.js'
+        'answer1.js', 'answer2.js', 'answer3.js', 'answer4.js', 'answer5.js','answer6.js'
     ])
     .then(() => {
         // Charger toutes les questions après que tous les scripts de réponse sont chargés
         loadQuestions([
-            'question1.html', 'question2.html', 'question3.html', 'question4.html', 'question5.html'
+            'question1.html', 'question2.html', 'question3.html', 'question4.html', 'question5.html','question6.html'
         ]);
     })
     .catch(error => console.error('Error loading scripts:', error));
