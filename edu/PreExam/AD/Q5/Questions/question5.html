@@ -1,0 +1,47 @@
+<div>
+  <h2>Question 5</h2>
+  <p>Refer to the exhibits.</p>
+  <p><img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q5/img/q5.png?raw=true" alt="Exhibit 1"></p>
+  <p><img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q5/img/q5_2.png?raw=true" alt="Exhibit 2"></p>
+  <p><img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q5/img/q5_3.png?raw=true" alt="Exhibit 3"></p>
+  <p>An administrator creates a new address object on the root FortiGate (Local-FortiGate) in the security fabric. After synchronization, this object is not available on the downstream FortiGate (ISFW).</p>
+  <p>What must the administrator do to synchronize the address object?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="syncAddressObject" value="A" id="optionA_5">
+      <label for="optionA_5">A. Change the csf setting on Local-FortiGate (root) to set fabric-object-unification default.</label><br>
+
+      <input type="radio" name="syncAddressObject" value="B" id="optionB_5">
+      <label for="optionB_5">B. Change the csf setting on both devices to set downstream-access enable.</label><br>
+
+      <input type="radio" name="syncAddressObject" value="C" id="optionC_5">
+      <label for="optionC_5">C. Change the csf setting on ISFW (downstream) to set authorization-request-type certificate.</label><br>
+
+      <input type="radio" name="syncAddressObject" value="D" id="optionD_5">
+      <label for="optionD_5">D. Change the csf setting on ISFW (downstream) to set configuration-sync local.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question5">Solution</button>
+
+  <div id="solutionInfo_question5" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p><img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q5/img/q5_4.png?raw=true" alt="Explanation Image"></p>
+    <p>When both devices are configured with <code>set downstream-access-disable</code> (answer in A), the newly created address objects are still replicated. However, when the root is configured with <code>set fabric-object-unification local</code>, the address object is no longer replicated to downstream FortiGates.</p>
+    <p>The CLI command <code>set fabric-object-unification</code> is only available on the root FortiGate. When set to <code>local</code>, global objects will not be synchronized to downstream devices in the Security Fabric. The default value is <code>default</code>.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/880913/synchronizing-objects-across-the-security-fabric" target="_blank">Fortinet Documentation - Synchronizing Objects Across the Security Fabric</a></li>
+      <li><a href="https://ebin.pub/fortinet-fortigate-security-study-guide-for-fortios-72.html" target="_blank">Fortinet FortiGate Security Study Guide for FortiOS 7.2</a></li>
+    </ul>
+
+    <p id="correctAnswers_question5" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      A. Change the csf setting on Local-FortiGate (root) to set fabric-object-unification default.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer5.js"></script>

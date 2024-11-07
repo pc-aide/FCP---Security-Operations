@@ -1,0 +1,42 @@
+<div>
+  <h2>Question 4</h2>
+  <p>Which statement correctly describes NetAPI polling mode for the FSSO collector agent?</p>
+
+  <form>
+    <div>
+      <input type="radio" name="netApiPolling" value="A" id="optionA_4">
+      <label for="optionA_4">A. The NetSessionEnum function is used to track user logouts.</label><br>
+
+      <input type="radio" name="netApiPolling" value="B" id="optionB_4">
+      <label for="optionB_4">B. NetAPI polling can increase bandwidth usage in large networks.</label><br>
+
+      <input type="radio" name="netApiPolling" value="C" id="optionC_4">
+      <label for="optionC_4">C. The collector agent must search Windows application event logs.</label><br>
+
+      <input type="radio" name="netApiPolling" value="D" id="optionD_4">
+      <label for="optionD_4">D. The collector agent uses a Windows API to query DCs for user logins.</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question4">Solution</button>
+
+  <div id="solutionInfo_question4" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p><img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q5/img/q4.png?raw=true" alt="Explanation Image"></p>
+    <p>In NetAPI polling mode, the FSSO collector agent uses the Windows NetAPI to poll domain controllers (DCs) and gather information on user logins. This method does not require searching the Windows application event logs and does not specifically track logouts using the NetSessionEnum function. However, B is also partly correct because NetAPI polling can indeed increase bandwidth usage in larger networks, but this is a secondary effect rather than a core functional description.</p>
+    <p>The polling method scans a Microsoft or Windows DC using the windows API (netapi32.dll) for logged in users.</p>
+
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://ebin.pub/qdownload/fortinet-fortigate-infrastructure-study-guide-for-fortios-72.html" target="_blank">Fortinet FortiGate Infrastructure Study Guide for FortiOS 7.2</a></li>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Note-FSSO-NetAPI-polling-bandwidth-usage-calculator/ta-p/196417?externalID=FD34906" target="_blank">Technical Note - FSSO NetAPI Polling Bandwidth Usage Calculator</a></li>
+    </ul>
+
+    <p id="correctAnswers_question4" style="display: none;">
+      <strong>Correct Answer:</strong><br>
+      D. The collector agent uses a Windows API to query DCs for user logins.
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer4.js"></script>

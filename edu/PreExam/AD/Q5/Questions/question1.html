@@ -1,0 +1,41 @@
+<div>
+  <h2>Question 01</h2>
+  <p>Which two pieces of information are synchronized between FortiGate HA members? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="haSync" value="A" id="optionA_1">
+      <label for="optionA_1">A. OSPF adjacencies</label><br>
+
+      <input type="checkbox" name="haSync" value="B" id="optionB_1">
+      <label for="optionB_1">B. IPsec security associations</label><br>
+
+      <input type="checkbox" name="haSync" value="C" id="optionC_1">
+      <label for="optionC_1">C. BGP peerings</label><br>
+
+      <input type="checkbox" name="haSync" value="D" id="optionD_1">
+      <label for="optionD_1">D. DHCP leases</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question1">Solution</button>
+
+  <div id="solutionInfo_question1" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p><img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q5/img/q1.png?raw=true" alt="Explanation Image"></p>
+    <p>These items are synchronized across the cluster to ensure session and network continuity during failover. OSPF adjacencies and BGP peerings, on the other hand, are generally not synchronized because they rely on dynamic routing protocols that can re-establish connections when failover occurs.</p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://help.fortinet.com/fddos/4-3-0/FortiDDoS/HA_synchronization.htm#:~:text=Synchronization%20occurs%20immediately%20when%20an,and%20thereafter%20every%2030%20seconds." target="_blank">Fortinet HA Synchronization Documentation</a></li>
+    </ul>
+
+    <p id="correctAnswers_question1" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      B. IPsec security associations<br>
+      D. DHCP leases
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer1.js"></script>

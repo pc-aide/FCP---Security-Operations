@@ -1,0 +1,51 @@
+<div>
+  <h2>Question 2</h2>
+  <p>Refer to the exhibit.<br>
+    <img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q5/img/q2.png?raw=true" alt="Exhibit Image">
+  </p>
+  <p>Based on the routing database shown in the exhibit which two conclusions can you make about the routes? (Choose two.)</p>
+
+  <form>
+    <div>
+      <input type="checkbox" name="routingDatabase" value="A" id="optionA_2">
+      <label for="optionA_2">A. There will be eight routes active in the routing table</label><br>
+
+      <input type="checkbox" name="routingDatabase" value="B" id="optionB_2">
+      <label for="optionB_2">B. The port1 and port2 default routes are active in the routing table</label><br>
+
+      <input type="checkbox" name="routingDatabase" value="C" id="optionC_2">
+      <label for="optionC_2">C. The port3 default route has the highest distance</label><br>
+
+      <input type="checkbox" name="routingDatabase" value="D" id="optionD_2">
+      <label for="optionD_2">D. The port3 default route has the lowest metric</label><br>
+    </div>
+  </form>
+
+  <button class="solutionButton" data-answer-name="question2">Solution</button>
+
+  <div id="solutionInfo_question2" class="solutionInfo" style="display: none;">
+    <p><strong>Explanation:</strong></p>
+    <p><img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q5/img/q2_2.png?raw=true" alt="Explanation Image 1"></p>
+    <p><img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q5/img/q2_3.png?raw=true" alt="Explanation Image 2"></p>
+    <p>A - Can't be right since every route has metric value of 0<br>
+       B - Correct since they are active<br>
+       C - The port3 default route has the highest distance<br>
+       D - False
+    </p>
+    
+    <p><strong>References:</strong></p>
+    <ul>
+      <li><a href="https://ebin.pub/fortinet-fortigate-infrastructure-study-guide-for-fortios-72.html" target="_blank">Fortinet FortiGate Infrastructure Study Guide for FortiOS 7.2</a></li>
+      <li><a href="https://docs.fortinet.com/document/fortigate/6.4.4/administration-guide/139692/routing-concepts" target="_blank">Fortinet Administration Guide - Routing Concepts</a></li>
+      <li><a href="https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-identify-Inactive-Routes-in-the-Routing/ta-p/197595" target="_blank">Fortinet Community - How to identify Inactive Routes in the Routing Table</a></li>
+    </ul>
+
+    <p id="correctAnswers_question2" style="display: none;">
+      <strong>Correct Answers:</strong><br>
+      B. The port1 and port2 default routes are active in the routing table<br>
+      C. The port3 default route has the highest distance
+    </p>
+  </div>
+</div>
+
+<script src="../Scripts/answer2.js"></script>
