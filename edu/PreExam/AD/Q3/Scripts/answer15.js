@@ -2,7 +2,7 @@
 function attachSolutionButtonListeners_question15(button) {
   button.addEventListener('click', function() {
     // Define correct answers
-    const correctAnswers = ['A', 'B', 'D'];
+    const correctAnswers = ['A', 'B', 'E'];
 
     // Get selected answers
     const selectedAnswers = Array.from(document.querySelectorAll('input[name="cliCommands"]:checked')).map(input => input.value);
