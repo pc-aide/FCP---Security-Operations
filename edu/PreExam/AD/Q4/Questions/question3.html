@@ -25,12 +25,13 @@
 
   <div id="solutionInfo_question3" class="solutionInfo" style="display: none;">
     <p><strong>Explanation:</strong></p>
+    <img src="https://github.com/pc-aide/FCP-SO/blob/main/edu/PreExam/AD/Q4/img/q3.png?raw=true">
     <p>
       B: Flow-based inspection is typically faster and has lower latency because it scans traffic as it flows through, rather than buffering and inspecting the entire file as in proxy-based inspection.<br>
-      C: In flow-based inspection, FortiGate can start sending parts of the file to the client while continuing to scan, which helps to reduce latency.<br>
-      E: The IPS (Intrusion Prevention System) engine is responsible for handling flow-based antivirus scanning in FortiGate, working as a standalone process for better performance.
+      C: In flow-based inspection, FortiGate can start sending parts of the file to the client while continuing to scan, which helps to reduce latency.
     </p>
-    
+    <p>Incorrect:</p>
+    <p>D. If a virus is detected, the last packet is delivered to the client.<br/> "When a virus is detected on a TCP session where some packets have been already forwarded to the receiver, FortiGate resets the connection and does not send the last piece of the file. Although the receiver got most of the file content, the file has been truncated and therefore, can’t be opened.</p>
     <p><strong>References:</strong></p>
     <ul>
       <li><a href="https://help.fortinet.com/fos50hlp/56/Content/FortiOS/fortigate-security-profiles/Inspection%20Modes/flow_mode.htm" target="_blank">Fortinet Documentation - Flow Mode</a></li>
@@ -40,9 +41,9 @@
 
     <p id="correctAnswers_question3" style="display: none;">
       <strong>Correct Answers:</strong><br>
+      A. A. Flow-based inspection uses a hybrid of the scanning modes available in proxy-based inspection.
       B. Flow-based inspection optimizes performance compared to proxy-based inspection.<br>
-      C. FortiGate buffers the whole file but transmits to the client at the same time.<br>
-      E. The IPS engine handles the process as a standalone.
+      C. FortiGate buffers the whole file but transmits to the client at the same time.
     </p>
   </div>
 </div>
