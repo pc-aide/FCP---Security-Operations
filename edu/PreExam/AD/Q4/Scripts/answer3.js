@@ -2,7 +2,7 @@
 function attachSolutionButtonListeners_question3(button) {
   button.addEventListener('click', function() {
     // Define correct answers
-    const correctAnswers = ['B', 'C', 'E'];
+    const correctAnswers = ['A','B', 'C'];
 
     // Get selected answers
     const selectedAnswers = Array.from(document.querySelectorAll('input[name="flowAntivirus"]:checked')).map(input => input.value);
