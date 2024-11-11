@@ -2,7 +2,7 @@
 function attachSolutionButtonListeners_question19(button) {
   button.addEventListener('click', function() {
     // Define the correct answer
-    const correctAnswer = 'A';
+    const correctAnswer = 'C';
 
     // Get selected answer
     const selectedAnswer = document.querySelector('input[name="quickModeSelector"]:checked');
