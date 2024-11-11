@@ -2,7 +2,7 @@
 function attachSolutionButtonListeners_question15(button) {
   button.addEventListener('click', function() {
     // Define correct answer
-    const correctAnswer = 'C';
+    const correctAnswer = 'D';
 
     // Get selected answer
     const selectedAnswer = document.querySelector('input[name="nocRequest"]:checked')?.value;
