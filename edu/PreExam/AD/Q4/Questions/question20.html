@@ -24,7 +24,10 @@
     <p><strong>Explanation:</strong></p>
     <p>B is crucial. FortiGate needs to know how to reach networks connected to its interfaces. Directly connected routes ensure that traffic destined for the LAN or DMZ can be forwarded correctly.</p>
     <p>D is also important. Each interface in NAT mode must have an IP address assigned for it to communicate effectively on its respective network (LAN or DMZ).</p>
-    
+    <p>Incorrect:</p>
+    <p>A. Both interfaces must have the interface role assigned: The interface role is optional and not strictly required for routing functionality. Roles are often used for administrative purposes or specific policies.
+      <br/><br/>
+      C. Both interfaces must have DHCP enabled: DHCP is not required. FortiGate interfaces can have static IPs or use DHCP as needed based on network design.</p>
     <p><strong>References:</strong></p>
     <ul>
       <li><a href="https://community.fortinet.com/t5/Support-Forum/Incoming-NAT/td-p/294282" target="_blank">Fortinet Support Forum - Incoming NAT</a></li>
