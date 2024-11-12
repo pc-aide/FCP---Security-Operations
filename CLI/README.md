@@ -15,6 +15,7 @@
 |8|top process|`diagnose sys top`|<img src="https://i.imgur.com/aQc7a0E.png"><br/><img src="https://i.imgur.com/xqSdhtq.png">|
 |9|conserver mode|`diagnose hardware sysinfo conserve`|<img src="https://i.imgur.com/83j07XY.png"><br/><img src="https://i.imgur.com/bbrgLq8.png">|
 |10|full|`diag hardware sysinfo vm full`|
+|11|verify IP address|`diagnose ip address list`||
 
 ---
 
