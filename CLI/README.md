@@ -17,7 +17,7 @@
 |10|full|`diag hardware sysinfo vm full`|
 |11|verify IP address|`diagnose ip address list`|<img src="https://i.imgur.com/2PLtyEz.png">|
 |12|Encryption & Integrity|`diag vpn ipsec status`|<img src="https://github.com/pc-aide/FCP-SO/blob/main/CLI/diag%20vpn%20ipsec%20status.png?raw=true">|
-|13|mode aggressive|`diag vpn ike config \| grep -i mode`||
+|13|mode aggressive|`diag vpn ike config \| grep -i mode`|<img src="https://github.com/pc-aide/FCP-SO/blob/main/CLI/mode%20aggressive.png">|
 
 ---
 
