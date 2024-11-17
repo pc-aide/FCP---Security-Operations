@@ -16,6 +16,7 @@
 |9|conserver mode|`diagnose hardware sysinfo conserve`|<img src="https://i.imgur.com/83j07XY.png"><br/><img src="https://i.imgur.com/bbrgLq8.png">|
 |10|full|`diag hardware sysinfo vm full`|
 |11|verify IP address|`diagnose ip address list`|<img src="https://i.imgur.com/2PLtyEz.png">|
+|12|Encryption & Integrity|`diag vpn ipsec status`||
 
 ---
 
