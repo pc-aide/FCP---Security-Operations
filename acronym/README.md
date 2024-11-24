@@ -49,3 +49,4 @@
 |42|UUID|Universally Unique Identifier|
 |43|FGCP|FortiGate Clustering Protocol|
 |44|NGFW|Next-Generation Firewall|
+|45|DORA|Discover Offer Request Acknowledge|
