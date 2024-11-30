@@ -22,15 +22,26 @@
 
 ---
 
-## config
+## config system settings
 |n|name|eg|O/P|
 |-|----|--|---|
 |1|proxy-inspection|`config system settings`<br/>`set gui-proxy-inspection enable`<br/>`end`|<img src="https://i.imgur.com/Fp3YBoR.png">|
 |2|feasible rpf(default)|`conf sys settings`<br/>`set strict-src-check disable`|<img src="https://i.imgur.com/q6xaAmR.png">|
-|3|vdom adm|`config system global`<br/>`set vdom-mode multi-vdom`<br/>`end`|
 |4|DNS over TLS|`config system dns`<br/>`set primary 8.8.8.8`<br/>`set dns-ver-tls enforce`<br/>`set ssl-certificate "Fortinet_Factory>`<br/>`end`|
-|5|disclaimer|`config firewall policy`<br/>`edit <policy_id>`<br/>`set disclaimer enable`<br/>`end`|
-|6|interval logs generated|`config system global`<br/>`set sys-perf-log-interval <number from 0-15>`<br/>`end`|
+
+---
+## config firewall
+|n|name|eg|O/P|
+|-|----|--|---|
+|1|disclaimer|`config firewall policy`<br/>`edit <policy_id>`<br/>`set disclaimer enable`<br/>`end`|
+
+---
+
+## config system global
+|n|name|eg|O/P|
+|-|----|--|---|
+|1|interval logs generated|`config system global`<br/>`set sys-perf-log-interval <number from 0-15>`<br/>`end`|
+|2|vdom adm|`config system global`<br/>`set vdom-mode multi-vdom`<br/>`end`|
 
 ---
 
