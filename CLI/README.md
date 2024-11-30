@@ -27,7 +27,7 @@
 |-|----|--|---|
 |1|proxy-inspection|`config system settings`<br/>`set gui-proxy-inspection enable`<br/>`end`|<img src="https://i.imgur.com/Fp3YBoR.png">|
 |2|feasible rpf(default)|`conf sys settings`<br/>`set strict-src-check disable`|<img src="https://i.imgur.com/q6xaAmR.png">|
-|4|DNS over TLS|`config system dns`<br/>`set primary 8.8.8.8`<br/>`set dns-ver-tls enforce`<br/>`set ssl-certificate "Fortinet_Factory>`<br/>`end`|
+|3|DNS over TLS|`config system dns`<br/>`set primary 8.8.8.8`<br/>`set dns-ver-tls enforce`<br/>`set ssl-certificate "Fortinet_Factory>`<br/>`end`|
 
 ---
 ## config firewall
