@@ -19,6 +19,7 @@
 |12|Encryption & Integrity|`diag vpn ipsec status`|<img src="https://github.com/pc-aide/FCP-SO/blob/main/CLI/diag%20vpn%20ipsec%20status.png?raw=true">|
 |13|mode aggressive|`diag vpn ike config \| grep -i mode`|<img src="https://github.com/pc-aide/FCP-SO/blob/main/CLI/mode%20aggressive.png">|
 |14|auth users|`diagn firewall auth list`|
+|15|amount of space reserved|`diagn sys logdisk usage`|
 
 ---
 
