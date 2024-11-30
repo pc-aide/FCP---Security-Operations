@@ -30,6 +30,7 @@
 |3|vdom adm|`config system global`<br/>`set vdom-mode multi-vdom`<br/>`end`|
 |4|DNS over TLS|`config system dns`<br/>`set primary 8.8.8.8`<br/>`set dns-ver-tls enforce`<br/>`set ssl-certificate "Fortinet_Factory>`<br/>`end`|
 |5|disclaimer|`config firewall policy`<br/>`edit <policy_id>`<br/>`set disclaimer enable`<br/>`end`|
+|6|interval logs generated|`config system global`<br/>`set sys-perf-log-interval <number from 0-15>`<br/>`end`|
 
 ---
 
